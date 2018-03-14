@@ -56,7 +56,9 @@ if let jsv4 = context.objectForKeyedSubscript("array") {
  */
 /**
  @convention(block)
- @convention 是在swift2.0引入的，用于修饰
+ @convention 是在swift2.0引入的，用于修饰函数的类型，指出了函数调用的约定，用在一下几个地方：
+    1.修饰Swift中的函数类型，调用C函数的时候，可以传入修饰过@convention(c)的函数类型，匹配C函数参数中的函数指针
+    2.修饰Swift中的函数类型，调用OC方法的时候，可以传入修饰过@convention(block)的函数类型，匹配OC方法中的block参数
  */
 let jsCallNativeMethod: @convention(block) (String) -> Void = {
     (content: String) in
