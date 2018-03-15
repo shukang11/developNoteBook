@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2316065C2059FEFC00A7F0BC /* House_Robber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2316065B2059FEFC00A7F0BC /* House_Robber.swift */; };
 		23A872A420575EB700CD2470 /* Merge_Two_Sorted_lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A872A320575EB700CD2470 /* Merge_Two_Sorted_lists.swift */; };
 		23DFBA10205369F90091CA5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DFBA0F205369F90091CA5D /* AppDelegate.swift */; };
 		23DFBA12205369F90091CA5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DFBA11205369F90091CA5D /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2316065B2059FEFC00A7F0BC /* House_Robber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House_Robber.swift; sourceTree = "<group>"; };
 		23A872A320575EB700CD2470 /* Merge_Two_Sorted_lists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merge_Two_Sorted_lists.swift; sourceTree = "<group>"; };
 		23DFBA0C205369F90091CA5D /* LeetCodeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetCodeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DFBA0F205369F90091CA5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				23F0CC102056071500A844FC /* Climbing_stairs.swift */,
 				23A872A320575EB700CD2470 /* Merge_Two_Sorted_lists.swift */,
 				23EAE8652058B5520032D8DB /* Maximum_SubArray.swift */,
+				2316065B2059FEFC00A7F0BC /* House_Robber.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				23F0CC0F2056066100A844FC /* TestCase.swift in Sources */,
 				23F0CC112056071500A844FC /* Climbing_stairs.swift in Sources */,
 				23DFBA12205369F90091CA5D /* ViewController.swift in Sources */,
+				2316065C2059FEFC00A7F0BC /* House_Robber.swift in Sources */,
 				23A872A420575EB700CD2470 /* Merge_Two_Sorted_lists.swift in Sources */,
 				23DFBA10205369F90091CA5D /* AppDelegate.swift in Sources */,
 				23EAE8662058B5520032D8DB /* Maximum_SubArray.swift in Sources */,
