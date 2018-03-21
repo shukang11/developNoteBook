@@ -11,6 +11,7 @@ import Foundation
 class TestCase: NSObject {
     func testBegin() {
         let s = Solution.init()
-        s.climbStairs(4)
+        let result = s.wordBreak("aaaaaaa", ["aa", "aaaa"])
+        print("\(result)")
     }
 }

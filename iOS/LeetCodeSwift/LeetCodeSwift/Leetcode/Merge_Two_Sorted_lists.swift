@@ -8,12 +8,13 @@
 
 import Foundation
 
-public class ListNode {
+public class ListNode: NSObject {
     public var val: Int
-    public var next: ListNode?
+    public var next: ListNode? = nil
+    
     public init(_ val: Int) {
         self.val = val
-        self.next = nil
+        super.init()
     }
 }
 
