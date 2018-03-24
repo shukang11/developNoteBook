@@ -11,8 +11,10 @@
 		2316DE2C2061EA2F00B4EE64 /* Word_Break.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2316DE2B2061EA2F00B4EE64 /* Word_Break.swift */; };
 		235D709B205B552A0022438D /* Two_Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235D709A205B552A0022438D /* Two_Sum.swift */; };
 		235D709D205B5A2C0022438D /* Hanming_Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235D709C205B5A2C0022438D /* Hanming_Distance.swift */; };
+		2365FB8C20633CD50063918C /* Valid_Parentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2365FB8B20633CD50063918C /* Valid_Parentheses.swift */; };
 		23A872A420575EB700CD2470 /* Merge_Two_Sorted_lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A872A320575EB700CD2470 /* Merge_Two_Sorted_lists.swift */; };
 		23AB8E8920609C4300B2BB4B /* Linked_List__Cycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AB8E8820609C4300B2BB4B /* Linked_List__Cycle.swift */; };
+		23CC771A206488CF008903FD /* Find_All_Anagrams_In_A_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CC7719206488CF008903FD /* Find_All_Anagrams_In_A_String.swift */; };
 		23DFBA10205369F90091CA5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DFBA0F205369F90091CA5D /* AppDelegate.swift */; };
 		23DFBA12205369F90091CA5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DFBA11205369F90091CA5D /* ViewController.swift */; };
 		23DFBA15205369F90091CA5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23DFBA13205369F90091CA5D /* Main.storyboard */; };
@@ -29,8 +31,10 @@
 		2316DE2B2061EA2F00B4EE64 /* Word_Break.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word_Break.swift; sourceTree = "<group>"; };
 		235D709A205B552A0022438D /* Two_Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Two_Sum.swift; sourceTree = "<group>"; };
 		235D709C205B5A2C0022438D /* Hanming_Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hanming_Distance.swift; sourceTree = "<group>"; };
+		2365FB8B20633CD50063918C /* Valid_Parentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Valid_Parentheses.swift; sourceTree = "<group>"; };
 		23A872A320575EB700CD2470 /* Merge_Two_Sorted_lists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merge_Two_Sorted_lists.swift; sourceTree = "<group>"; };
 		23AB8E8820609C4300B2BB4B /* Linked_List__Cycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Linked_List__Cycle.swift; sourceTree = "<group>"; };
+		23CC7719206488CF008903FD /* Find_All_Anagrams_In_A_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_All_Anagrams_In_A_String.swift; sourceTree = "<group>"; };
 		23DFBA0C205369F90091CA5D /* LeetCodeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetCodeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DFBA0F205369F90091CA5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23DFBA11205369F90091CA5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 				235D709C205B5A2C0022438D /* Hanming_Distance.swift */,
 				23AB8E8820609C4300B2BB4B /* Linked_List__Cycle.swift */,
 				2316DE2B2061EA2F00B4EE64 /* Word_Break.swift */,
+				2365FB8B20633CD50063918C /* Valid_Parentheses.swift */,
+				23CC7719206488CF008903FD /* Find_All_Anagrams_In_A_String.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -182,8 +188,10 @@
 				2316065C2059FEFC00A7F0BC /* House_Robber.swift in Sources */,
 				23A872A420575EB700CD2470 /* Merge_Two_Sorted_lists.swift in Sources */,
 				2316DE2C2061EA2F00B4EE64 /* Word_Break.swift in Sources */,
+				23CC771A206488CF008903FD /* Find_All_Anagrams_In_A_String.swift in Sources */,
 				23DFBA10205369F90091CA5D /* AppDelegate.swift in Sources */,
 				235D709B205B552A0022438D /* Two_Sum.swift in Sources */,
+				2365FB8C20633CD50063918C /* Valid_Parentheses.swift in Sources */,
 				23AB8E8920609C4300B2BB4B /* Linked_List__Cycle.swift in Sources */,
 				23EAE8662058B5520032D8DB /* Maximum_SubArray.swift in Sources */,
 			);

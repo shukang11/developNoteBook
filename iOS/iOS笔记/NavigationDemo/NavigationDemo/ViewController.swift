@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         
         let rightButton = UIBarButtonItem.init(customView: {
             let o = UIButton.init()
+            o.frame = CGRect.init(x: 20.0, y: 0.0, width: 44.0, height: 44.0)
             o.setTitle("右", for: .normal)
             o.setTitleColor(UIColor.black, for: .normal)
             o.addTarget(self, action: #selector(ViewController.move(_:)), for: .touchUpInside)
@@ -30,8 +31,18 @@ class ViewController: UIViewController {
             return o
         }())
         let fixed = UIBarButtonItem.init(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
-        fixed.width = 10;
+        fixed.width = -10;
         self.navigationItem.rightBarButtonItems = [rightButton, fixed, second]
+        
+        
+        let leftButton: UIButton = {
+            let o = UIButton.init()
+            o.setTitle("左边的", for: .normal)
+            o.setTitleColor(UIColor.green, for: .normal)
+            return o
+        }()
+        let leftItem: UIBarButtonItem = UIBarButtonItem.init(customView: leftButton)
+        self.navigationItem.leftBarButtonItem = leftItem
     }
 
     override func didReceiveMemoryWarning() {
