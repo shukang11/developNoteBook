@@ -36,3 +36,21 @@ import UIKit
      }
      UIView.animateWithDuration(2, animations: animationsBlock, completion: completionBlock)
  */
+
+
+/// associatedtype  
+protocol AProtocol {
+    associatedtype T
+    func say()
+}
+
+class A: AProtocol {
+    typealias T = Int
+    func say() {
+        print("asdfasd")
+    }
+}
+
+let clazz = NSClassFromString("KeyWordsDemo.A")
+print("\(clazz)")
+
