@@ -20,6 +20,3 @@ DispatchQueue.main.sync {
 }
 print("3")// 任务3
 */
-
-
-

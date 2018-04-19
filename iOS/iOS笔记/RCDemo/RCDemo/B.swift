@@ -19,7 +19,10 @@ class B: NSObject {
         self.name = name
         super.init()
     }
+    deinit {
+        print("\(self) 被释放了")
+    }
     override var description: String {
-        return "\(self.name)\(menoryPos(self))"
+        return "\(self.name) -->\(menoryPos(self))"
     }
 }

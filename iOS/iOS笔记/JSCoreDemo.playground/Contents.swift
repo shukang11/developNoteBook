@@ -34,6 +34,7 @@ let array = [1, 2, 3, 4, 5]
 context.evaluateScript(
     "\(array).map(function(n){return n*n})"
 )
+
 context.setObject(array, forKeyedSubscript: "array" as NSCopying & NSObjectProtocol)
 let jsv3 = context.evaluateScript(
     "array.map(function(n){return n*n})"
@@ -64,6 +65,28 @@ let jsCallNativeMethod: @convention(block) (String) -> Void = {
     (content: String) in
     print("\(content)")
 }
+
 context.setObject(
     unsafeBitCast(jsCallNativeMethod, to: AnyObject.self), forKeyedSubscript: "methodName" as NSCopying & NSObjectProtocol)
 context.evaluateScript("methodName('hahaha')")
+
+
+/**
+ JSContext & JSExport
+ js -> native
+ */
+
+protocol HelperExport: JSExport {
+    func test()
+}
+
+class Helper: NSObject, HelperExport {
+    func test() {
+        print("hello test")
+    }
+}
+let helper = Helper()
+context.setObject(helper, forKeyedSubscript: "helper" as NSCopying & NSObjectProtocol)
+context.evaluateScript("helper.test();")
+
+

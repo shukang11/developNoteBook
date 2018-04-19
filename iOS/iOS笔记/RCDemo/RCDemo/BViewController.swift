@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 class BViewController: UIViewController {
     //MARK:property
+    var content: String = "aaa"
     var block: ((_ content: String) -> Void)?
+
     var hodler: ResD = {
         let o = ResD.init()
         return o
@@ -19,14 +21,16 @@ class BViewController: UIViewController {
     override func viewDidLoad() {
         self.view.backgroundColor = UIColor.white
 //        unowned let wS = self
-//        self.block = {(content: String) in
-//            self.title = content
-//        }
+        self.block = {[weak self] (content: String) in
+            self?.title = content
+        }
         super.viewDidLoad()
         self.createUI()
     }
     //MARK:delegate&dataSource
-    
+    deinit {
+        print("\(self)被释放了")
+    }
     //MARK:customMethod
     private func createUI() {
         hodler.relay(withDuration: 1, animations: {
@@ -42,7 +46,7 @@ class BViewController: UIViewController {
 //        b?.subA = a
     }
     func log() -> Void {
-        print("\(self.title)")
+        print("\(self.title!)")
     }
 }
 

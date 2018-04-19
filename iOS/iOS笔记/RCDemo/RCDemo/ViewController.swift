@@ -32,16 +32,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
         self.view.addSubview(self.button)
+        print("\(menoryPos(nil))")
         var a: A? = A(name: "a")
         let b: B? = B(name: "b")
         a?.subB = b
         b?.subA = a
         a = nil
-        print("b -> \(b?.subA)")
         // 如果没有下面的代码，会造成循环引用的问题
         b?.subA = nil
-        
-        
+        print("\(menoryPos(a))")
     }
 }
 /**
