@@ -10,6 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/LeetCode$Find_All_Anagrams_In_A_String.coverage" NAME="Find_All_Anagrams_In_A_String Coverage Results" MODIFIED="1524106307236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LeetCode$Climbing_Stairs.coverage" NAME="Climbing_Stairs Coverage Results" MODIFIED="1523150142197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LeetCode$Move_Zeros.coverage" NAME="Move_Zeros Coverage Results" MODIFIED="1523413761957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LeetCode$Queue_Reconstruction_By_Height.coverage" NAME="Queue_Reconstruction_By_Height Coverage Results" MODIFIED="1523497828741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -70,6 +71,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-50" />
     <option name="y" value="22" />
     <option name="width" value="830" />
     <option name="height" value="831" />
@@ -125,26 +127,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Queue_Reconstruction_By_Height">
-    <configuration default="false" name="Majority_Element" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="LeetCode" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Majority_Element.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.Find_All_Anagrams_In_A_String">
     <configuration default="false" name="Hanmming_Distance" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -216,6 +199,25 @@
       <module name="LeetCode" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Queue_Reconstruction_By_Height.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Find_All_Anagrams_In_A_String" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="LeetCode" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Find_All_Anagrams_In_A_String.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -370,19 +372,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Majority_Element" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Hanmming_Distance" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Move_Zeros" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Counting_Bits" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Queue_Reconstruction_By_Height" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Hanmming_Distance" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Move_Zeros" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Counting_Bits" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Queue_Reconstruction_By_Height" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Find_All_Anagrams_In_A_String" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Queue_Reconstruction_By_Height" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Counting_Bits" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Move_Zeros" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Hanmming_Distance" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Majority_Element" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Find_All_Anagrams_In_A_String" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Queue_Reconstruction_By_Height" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Counting_Bits" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Move_Zeros" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Hanmming_Distance" />
       </list>
     </recent_temporary>
   </component>
@@ -400,9 +402,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="830" height="831" extended-state="0" />
+    <frame x="-50" y="22" width="830" height="831" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.58502537" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58502537" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -648,6 +651,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Find_All_Anagrams_In_A_String.py" />
+    <entry file="file://$PROJECT_DIR$/Find_All_Anagrams_In_A_String.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
