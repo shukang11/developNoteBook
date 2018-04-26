@@ -1,16 +1,24 @@
-"""
-回文子串
-
-给定一个字符串，计算里面有多少个回文子串
-
-具有不同开始位置或结束位置的子串，即使由相同的字符串组成，也会被计算为不同的子串
-
-输入: "abc"
-输出: 3
-解释: 三个回文子串: "a", "b", "c".
-
-输入: "aaa"
-输出: 6
-说明: 6个回文子串: "a", "a", "a", "aa", "aa", "aaa".
 
 """
+子回文串
+
+"""
+class Solution(object):
+    def countSubstring(self, s):
+        N = len(s)
+        ans = 0
+        for center in range(2 * N - 1):
+            left = int(center / 2)
+            right = left + center % 2
+            while left >= 0 \
+                    and right < N \
+                    and s[left] == s[right]:
+                print(ans, s[left], left, s[right] ,right)
+                ans += 1
+                left -= 1
+                right += 1
+        return ans
+
+if __name__ == '__main__':
+    s = Solution()
+    print(s.countSubstring("aaa"))
