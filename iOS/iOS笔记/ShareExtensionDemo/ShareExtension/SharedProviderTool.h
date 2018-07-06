@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface SharedProviderTool : NSObject
-
+- (void)open:(nullable NSURL *)url from:(nonnull UIViewController *)controller;
 @end

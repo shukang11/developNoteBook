@@ -25,12 +25,25 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>NSExtensionActivationRule</key>
-			<string>TRUEPREDICATE</string>
+			<dict>
+				<key>NSExtensionActivationSupportsAttachmentsWithMaxCount</key>
+				<string>1</string>
+				<key>NSExtensionActivationSupportsImageWithMaxCount</key>
+				<string>0</string>
+				<key>NSExtensionActivationSupportsMovieWithMaxCount</key>
+				<string>0</string>
+				<key>NSExtensionActivationSupportsFileWithMaxCount</key>
+				<string>1</string>
+			</dict>
 		</dict>
 		<key>NSExtensionMainStoryboard</key>
 		<string>MainInterface</string>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.share-services</string>
 	</dict>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>treee</string>
+	</array>
 </dict>
 </plist>
