@@ -17,6 +17,8 @@
 		235D70E4205B9B500022438D /* SxrTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 235D70E3205B9B500022438D /* SxrTransaction.m */; };
 		235D70E7205BA2110022438D /* SxrAsynLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 235D70E6205BA2110022438D /* SxrAsynLayer.m */; };
 		235D70EA205BB6790022438D /* SxrLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 235D70E9205BB6790022438D /* SxrLabel.m */; };
+		23AB3DD520BD41E200CB567F /* NSAttributedString+SSText.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AB3DD420BD41E200CB567F /* NSAttributedString+SSText.m */; };
+		23AB3DD820BD430B00CB567F /* NSParagraphStyle+SSText.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AB3DD720BD430B00CB567F /* NSParagraphStyle+SSText.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,10 @@
 		235D70E6205BA2110022438D /* SxrAsynLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SxrAsynLayer.m; sourceTree = "<group>"; };
 		235D70E8205BB6790022438D /* SxrLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SxrLabel.h; sourceTree = "<group>"; };
 		235D70E9205BB6790022438D /* SxrLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SxrLabel.m; sourceTree = "<group>"; };
+		23AB3DD320BD41E200CB567F /* NSAttributedString+SSText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+SSText.h"; sourceTree = "<group>"; };
+		23AB3DD420BD41E200CB567F /* NSAttributedString+SSText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+SSText.m"; sourceTree = "<group>"; };
+		23AB3DD620BD430B00CB567F /* NSParagraphStyle+SSText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSParagraphStyle+SSText.h"; sourceTree = "<group>"; };
+		23AB3DD720BD430B00CB567F /* NSParagraphStyle+SSText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSParagraphStyle+SSText.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,10 @@
 		235D70C7205B903A0022438D /* AsynDisplayDemo */ = {
 			isa = PBXGroup;
 			children = (
+				23AB3DD620BD430B00CB567F /* NSParagraphStyle+SSText.h */,
+				23AB3DD720BD430B00CB567F /* NSParagraphStyle+SSText.m */,
+				23AB3DD320BD41E200CB567F /* NSAttributedString+SSText.h */,
+				23AB3DD420BD41E200CB567F /* NSAttributedString+SSText.m */,
 				235D70DE205B97BA0022438D /* SxrAsnyLayer */,
 				235D70E8205BB6790022438D /* SxrLabel.h */,
 				235D70E9205BB6790022438D /* SxrLabel.m */,
@@ -172,8 +182,10 @@
 			files = (
 				235D70E7205BA2110022438D /* SxrAsynLayer.m in Sources */,
 				235D70EA205BB6790022438D /* SxrLabel.m in Sources */,
+				23AB3DD820BD430B00CB567F /* NSParagraphStyle+SSText.m in Sources */,
 				235D70CD205B903A0022438D /* ViewController.m in Sources */,
 				235D70D8205B903A0022438D /* main.m in Sources */,
+				23AB3DD520BD41E200CB567F /* NSAttributedString+SSText.m in Sources */,
 				235D70CA205B903A0022438D /* AppDelegate.m in Sources */,
 				235D70E4205B9B500022438D /* SxrTransaction.m in Sources */,
 				235D70E1205B98010022438D /* SxrSentinel.m in Sources */,

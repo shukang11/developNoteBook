@@ -18,11 +18,10 @@
  使用Runloop：
  
  */
+#import "SxrLabel.h"
 @interface ViewController ()
 
 @end
-
-
 
 @implementation ViewController
 static void YYRunLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *info) {
@@ -32,11 +31,6 @@ static void YYRunLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopAc
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blueColor];
     self.title = @"异步绘制";
-    
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
     UIView *a = [UIView new];
     a.frame = CGRectMake(0.0, 100.0, 100.0, 100.0);
     a.backgroundColor = [UIColor redColor];
@@ -47,6 +41,16 @@ static void YYRunLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopAc
     content.frame = CGRectMake(0.0, 200.0, 320.0, 480.0);
     [self.view addSubview:content];
     
+    SxrLabel *label = [SxrLabel new];
+    label.text = @"hi";
+    label.font = [UIFont boldSystemFontOfSize:34];
+    label.backgroundColor = [UIColor grayColor];
+    label.frame = CGRectMake(100.0, 100.0, 100.0, 100.0);
+    [self.view addSubview:label];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

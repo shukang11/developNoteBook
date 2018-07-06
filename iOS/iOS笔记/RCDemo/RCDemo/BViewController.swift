@@ -12,8 +12,10 @@ class BViewController: UIViewController {
     //MARK:property
     var content: String = "aaa"
     var block: ((_ content: String) -> Void)?
-
-    var hodler: ResD = {
+    
+    var mod = Singleton.shared
+    
+    var hodler: ResD? = {
         let o = ResD.init()
         return o
     }()
@@ -24,6 +26,9 @@ class BViewController: UIViewController {
         self.block = {[weak self] (content: String) in
             self?.title = content
         }
+        UIView.animate(withDuration: 2.0, animations: {}) { (fin) in
+            self.title = "延迟设置了"
+        }
         super.viewDidLoad()
         self.createUI()
     }
@@ -33,24 +38,21 @@ class BViewController: UIViewController {
     }
     //MARK:customMethod
     private func createUI() {
-        hodler.relay(withDuration: 1, animations: {
+        hodler?.relay(withDuration: 1, animations: {
             
         }) { (comp) in
-            self.title = "改版"
+//            self.title = "改版"
             self.log()
         }
         
-//        var a: A? = A(name: "a")
-//        let b: B? = B(name: "b")
-//        a?.subB = b
-//        b?.subA = a
     }
     func log() -> Void {
-        print("\(self.title!)")
+        print("\(self.title)")
     }
 }
 
 class ResD: NSObject {
+    var posts:[String] = []
     var com: ((Bool) -> Void)?
     func relay(withDuration duration: TimeInterval, animations: @escaping ()-> Void, completion: ((Bool) -> Void)?=nil) {
         
@@ -58,6 +60,22 @@ class ResD: NSObject {
         completion?(true)
         self.com = nil
     }
+    deinit {
+        print("ResD 释放了")
+    }
+    override init() {
+        for _ in 0...10000000 {
+            posts.append("crashei ")
+        }
+    }
+}
+
+class Singleton {
+    static let `shared` = Singleton()
     
-    override init() {}
+    var name = "hi"
+    
+    private init() {
+        
+    }
 }

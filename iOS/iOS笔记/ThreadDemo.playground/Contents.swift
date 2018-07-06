@@ -20,3 +20,25 @@ DispatchQueue.main.sync {
 }
 print("3")// 任务3
 */
+
+class Quesstion: NSObject {
+    @objc func didPlay(_ content: String) {
+        print("\(content)")
+    }
+    
+    func question2() {
+        // 不要在主线程里再调主线程了
+        self.didPlay("1")
+        let global = DispatchQueue.global()
+        global.async {
+            self.perform(#selector(self.didPlay(_:)), with: "2", afterDelay: 1)
+            self.didPlay("3")
+            self.perform(#selector(self.didPlay(_:)), with: "4", afterDelay: 0)
+        }
+        self.didPlay("5")
+    }
+}
+
+let q = Quesstion()
+q.question2()
+

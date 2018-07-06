@@ -131,9 +131,8 @@ static dispatch_queue_t SxrAsyncLayerGetReleaseQueue() {
             }
             UIGraphicsBeginImageContextWithOptions(size, opaque, scale);
             CGContextRef context = UIGraphicsGetCurrentContext();
-            if (opaque) {
-                CGContextSaveGState(context);
-                {
+            if (opaque && context) {
+                CGContextSaveGState(context);{
                     if (!backgroundColor || CGColorGetAlpha(backgroundColor) < 1) {
                         CGContextSetFillColorWithColor(context, [UIColor whiteColor].CGColor);
                         CGContextAddRect(context, CGRectMake(0.0, 0.0, size.width * scale, size.height * scale));
@@ -147,32 +146,31 @@ static dispatch_queue_t SxrAsyncLayerGetReleaseQueue() {
                     CGContextRestoreGState(context);
                     CGColorRelease(backgroundColor);
                 }
-                
-                task.display(context, size, isCancelled);
-                if(isCancelled()) {
-                    UIGraphicsEndImageContext();
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        if (task.didDisplay) task.didDisplay(self, NO);
-                    });
-                    return;
-                }
-                UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-                UIGraphicsEndImageContext();
-                if (isCancelled()) {
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        if (task.didDisplay) task.didDisplay(self, NO);
-                    });
-                    return;
-                }
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    if (isCancelled()) {
-                        if (task.didDisplay) task.didDisplay(self, NO);
-                    } else {
-                        self.contents = (__bridge id)(image.CGImage);
-                        if (task.didDisplay) task.didDisplay(self, YES);
-                    }
-                });
             }
+            task.display(context, size, isCancelled);
+            if(isCancelled()) {
+                UIGraphicsEndImageContext();
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if (task.didDisplay) task.didDisplay(self, NO);
+                });
+                return;
+            }
+            UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext();
+            if (isCancelled()) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if (task.didDisplay) task.didDisplay(self, NO);
+                });
+                return;
+            }
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (isCancelled()) {
+                    if (task.didDisplay) task.didDisplay(self, NO);
+                } else {
+                    self.contents = (__bridge id)(image.CGImage);
+                    if (task.didDisplay) task.didDisplay(self, YES);
+                }
+            });
         });
     }else {
         [_sentinel increase];

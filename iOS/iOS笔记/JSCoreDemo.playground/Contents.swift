@@ -63,7 +63,7 @@ if let jsv4 = context.objectForKeyedSubscript("array") {
  */
 let jsCallNativeMethod: @convention(block) (String) -> Void = {
     (content: String) in
-    print("\(content)")
+    print("jsCallNativeMethod -> \(content)")
 }
 
 context.setObject(
@@ -75,7 +75,6 @@ context.evaluateScript("methodName('hahaha')")
  JSContext & JSExport
  js -> native
  */
-
 protocol HelperExport: JSExport {
     func test()
 }

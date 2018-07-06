@@ -43,7 +43,3 @@ class ViewController: UIViewController {
         print("\(menoryPos(a))")
     }
 }
-/**
- open class func animate(withDuration duration: TimeInterval, delay: TimeInterval, options: UIViewAnimationOptions = [], animations: @escaping () -> Swift.Void, completion: ((Bool) -> Swift.Void)? = nil)
- */
-

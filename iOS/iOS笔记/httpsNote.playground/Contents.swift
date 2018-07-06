@@ -53,3 +53,20 @@ class RequestHandler: NSObject, URLSessionDataDelegate {
 
 let a = RequestHandler.init()
 a.call()
+
+let url = URL.init(string: "http://www.host.com/query/add?name=ssk&age=18")
+print(url?.pathComponents)
+print(url?.pathExtension)
+
+
+
+let url2 = URL.init(string: "querty/ad/path/14446.jpg")
+print(url2?.pathComponents)
+print("\(url2?.pathExtension)")
+if let filename = url2?.pathComponents.last {
+    if filename.contains(".") {// is file
+        if let result = filename.split(separator: ".").last {
+            print("\(result)")
+        }
+    }
+}
