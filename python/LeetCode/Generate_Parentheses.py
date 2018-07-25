@@ -20,6 +20,7 @@ Generate n - 1 pair inside, 0 afterward: ((...))
 I bet you see the overlapping subproblems here. Here is the code:
 
 (you could see in the code that x represents one j-pair solution and y represents one (i - j - 1) pair solution, and we are taking into account all possible of combinations of them)
+
 """
 
 class Solution(object):
@@ -31,6 +32,10 @@ class Solution(object):
                 dp[i] += ['(' + x + ')' + y for x in dp[j] for y in dp[i-j-1]]
                 print(j, i, dp)
         return dp[n]
+
+    """
+    这种方法的思想是找左括号，每找到一个左括号，就在其后面加一个完整的括号，最后再在开头加一个()，就形成了所有的情况，需要注意的是，有时候会出现重复的情况，所以我们用set数据结构，好处是如果遇到重复项，不会加入到结果中，最后我们再把set转为vector即可
+    """
 
 if __name__ == '__main__':
     s = Solution()

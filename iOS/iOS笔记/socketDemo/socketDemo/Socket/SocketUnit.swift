@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import SocketRocket
+
+class SocketUnit: SRWebSocket {
+    override init!(urlRequest request: URLRequest!) {
+        super.init(urlRequest: request)
+    }
+    
+    override func open() {
+        super.open()
+        
+    }
+}

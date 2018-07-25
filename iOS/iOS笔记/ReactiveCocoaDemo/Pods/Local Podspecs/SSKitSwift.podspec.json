@@ -1,0 +1,26 @@
+{
+  "name": "SSKitSwift",
+  "version": "0.1.4",
+  "summary": "common method of swift",
+  "description": "a common tools of swift",
+  "homepage": "https://github.com/jiazifa/SSKitSwift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jiazifa": "sunshukang30@163.com"
+  },
+  "source": {
+    "git": "https://github.com/jiazifa/SSKitSwift.git",
+    "tag": "0.1.4"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SSKitSwift/**/*",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ]
+}

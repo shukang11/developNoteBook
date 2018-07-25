@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import SocketRocket
+
+class SocketManager: NSObject {
+    
+}
+
+
