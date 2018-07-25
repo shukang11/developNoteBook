@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2357EB2721018B9400310E65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB2621018B9400310E65 /* AppDelegate.swift */; };
+		2357EB2921018B9400310E65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB2821018B9400310E65 /* ViewController.swift */; };
+		2357EB2C21018B9400310E65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2357EB2A21018B9400310E65 /* Main.storyboard */; };
+		2357EB2E21018B9400310E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2357EB2D21018B9400310E65 /* Assets.xcassets */; };
+		2357EB3121018B9400310E65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2357EB2F21018B9400310E65 /* LaunchScreen.storyboard */; };
+		2357EB3B21018F9300310E65 /* Import.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB3A21018F9300310E65 /* Import.swift */; };
+		2357EB412101945700310E65 /* SYNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB3E2101945700310E65 /* SYNavigationController.swift */; };
+		2357EB422101945700310E65 /* SYViewVontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB3F2101945700310E65 /* SYViewVontroller.swift */; };
+		2357EB432101945700310E65 /* SYTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB402101945700310E65 /* SYTableViewController.swift */; };
+		2357EB472101946300310E65 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB452101946300310E65 /* Command.swift */; };
+		2357EB482101946300310E65 /* CommandManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB462101946300310E65 /* CommandManager.swift */; };
+		2357EB4D2101946D00310E65 /* module.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2357EB4A2101946D00310E65 /* module.plist */; };
+		2357EB4E2101946D00310E65 /* ModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB4B2101946D00310E65 /* ModuleManager.swift */; };
+		2357EB4F2101946D00310E65 /* ModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB4C2101946D00310E65 /* ModuleProtocols.swift */; };
+		2357EB532101947300310E65 /* TableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB512101947300310E65 /* TableViewExt.swift */; };
+		2357EB542101947300310E65 /* TableViewConver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB522101947300310E65 /* TableViewConver.swift */; };
+		2357EB572101952300310E65 /* ReactiveInputDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB562101952300310E65 /* ReactiveInputDemo.swift */; };
+		2357EB5B210195C900310E65 /* SyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB59210195C900310E65 /* SyTableView.swift */; };
+		2357EB5C210195C900310E65 /* SyBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB5A210195C900310E65 /* SyBarButtonItem.swift */; };
+		A8A75F7BD6DE10CF117B107F /* Pods_ReactiveCocoaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13470E83C1A5653CFE442AAE /* Pods_ReactiveCocoaDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13470E83C1A5653CFE442AAE /* Pods_ReactiveCocoaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveCocoaDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2357EB2321018B9400310E65 /* ReactiveCocoaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCocoaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2357EB2621018B9400310E65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2357EB2821018B9400310E65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2357EB2B21018B9400310E65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2357EB2D21018B9400310E65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2357EB3021018B9400310E65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2357EB3221018B9400310E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2357EB3A21018F9300310E65 /* Import.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Import.swift; sourceTree = "<group>"; };
+		2357EB3E2101945700310E65 /* SYNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYNavigationController.swift; sourceTree = "<group>"; };
+		2357EB3F2101945700310E65 /* SYViewVontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYViewVontroller.swift; sourceTree = "<group>"; };
+		2357EB402101945700310E65 /* SYTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYTableViewController.swift; sourceTree = "<group>"; };
+		2357EB452101946300310E65 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		2357EB462101946300310E65 /* CommandManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandManager.swift; sourceTree = "<group>"; };
+		2357EB4A2101946D00310E65 /* module.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = module.plist; sourceTree = "<group>"; };
+		2357EB4B2101946D00310E65 /* ModuleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleManager.swift; sourceTree = "<group>"; };
+		2357EB4C2101946D00310E65 /* ModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleProtocols.swift; sourceTree = "<group>"; };
+		2357EB512101947300310E65 /* TableViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewExt.swift; sourceTree = "<group>"; };
+		2357EB522101947300310E65 /* TableViewConver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewConver.swift; sourceTree = "<group>"; };
+		2357EB562101952300310E65 /* ReactiveInputDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveInputDemo.swift; sourceTree = "<group>"; };
+		2357EB59210195C900310E65 /* SyTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyTableView.swift; sourceTree = "<group>"; };
+		2357EB5A210195C900310E65 /* SyBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyBarButtonItem.swift; sourceTree = "<group>"; };
+		963F6BD7222CD667C5033AB4 /* Pods-ReactiveCocoaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoaDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoaDemo/Pods-ReactiveCocoaDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C6F548B2646C9DABA18644B1 /* Pods-ReactiveCocoaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoaDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoaDemo/Pods-ReactiveCocoaDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2357EB2021018B9400310E65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8A75F7BD6DE10CF117B107F /* Pods_ReactiveCocoaDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2357EB1A21018B9400310E65 = {
+			isa = PBXGroup;
+			children = (
+				2357EB2521018B9400310E65 /* ReactiveCocoaDemo */,
+				2357EB2421018B9400310E65 /* Products */,
+				CF3494C7739559AF567F4333 /* Pods */,
+				CA79807941429A817403B64C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2357EB2421018B9400310E65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2357EB2321018B9400310E65 /* ReactiveCocoaDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2357EB2521018B9400310E65 /* ReactiveCocoaDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2357EB3821018EDE00310E65 /* Src */,
+				2357EB2621018B9400310E65 /* AppDelegate.swift */,
+				2357EB2821018B9400310E65 /* ViewController.swift */,
+				2357EB2A21018B9400310E65 /* Main.storyboard */,
+				2357EB2D21018B9400310E65 /* Assets.xcassets */,
+				2357EB2F21018B9400310E65 /* LaunchScreen.storyboard */,
+				2357EB3221018B9400310E65 /* Info.plist */,
+			);
+			path = ReactiveCocoaDemo;
+			sourceTree = "<group>";
+		};
+		2357EB3821018EDE00310E65 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				2357EB3C2101944400310E65 /* Controllers */,
+				2357EB3921018F2600310E65 /* Tools */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		2357EB3921018F2600310E65 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2357EB58210195C900310E65 /* InitializeExtension */,
+				2357EB502101947300310E65 /* TableViewExt */,
+				2357EB492101946D00310E65 /* ModuleManager */,
+				2357EB442101946300310E65 /* Command */,
+				2357EB3A21018F9300310E65 /* Import.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		2357EB3C2101944400310E65 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2357EB552101950300310E65 /* ReactiveInputDemo */,
+				2357EB3D2101945700310E65 /* BaseViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2357EB3D2101945700310E65 /* BaseViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2357EB3E2101945700310E65 /* SYNavigationController.swift */,
+				2357EB3F2101945700310E65 /* SYViewVontroller.swift */,
+				2357EB402101945700310E65 /* SYTableViewController.swift */,
+			);
+			path = BaseViewControllers;
+			sourceTree = "<group>";
+		};
+		2357EB442101946300310E65 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				2357EB452101946300310E65 /* Command.swift */,
+				2357EB462101946300310E65 /* CommandManager.swift */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		2357EB492101946D00310E65 /* ModuleManager */ = {
+			isa = PBXGroup;
+			children = (
+				2357EB4A2101946D00310E65 /* module.plist */,
+				2357EB4B2101946D00310E65 /* ModuleManager.swift */,
+				2357EB4C2101946D00310E65 /* ModuleProtocols.swift */,
+			);
+			path = ModuleManager;
+			sourceTree = "<group>";
+		};
+		2357EB502101947300310E65 /* TableViewExt */ = {
+			isa = PBXGroup;
+			children = (
+				2357EB512101947300310E65 /* TableViewExt.swift */,
+				2357EB522101947300310E65 /* TableViewConver.swift */,
+			);
+			path = TableViewExt;
+			sourceTree = "<group>";
+		};
+		2357EB552101950300310E65 /* ReactiveInputDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2357EB562101952300310E65 /* ReactiveInputDemo.swift */,
+			);
+			path = ReactiveInputDemo;
+			sourceTree = "<group>";
+		};
+		2357EB58210195C900310E65 /* InitializeExtension */ = {
+			isa = PBXGroup;
+			children = (
+				2357EB59210195C900310E65 /* SyTableView.swift */,
+				2357EB5A210195C900310E65 /* SyBarButtonItem.swift */,
+			);
+			path = InitializeExtension;
+			sourceTree = "<group>";
+		};
+		CA79807941429A817403B64C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13470E83C1A5653CFE442AAE /* Pods_ReactiveCocoaDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF3494C7739559AF567F4333 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6F548B2646C9DABA18644B1 /* Pods-ReactiveCocoaDemo.debug.xcconfig */,
+				963F6BD7222CD667C5033AB4 /* Pods-ReactiveCocoaDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2357EB2221018B9400310E65 /* ReactiveCocoaDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2357EB3521018B9400310E65 /* Build configuration list for PBXNativeTarget "ReactiveCocoaDemo" */;
+			buildPhases = (
+				1FC5814C21634CAF1790C11B /* [CP] Check Pods Manifest.lock */,
+				2357EB1F21018B9400310E65 /* Sources */,
+				2357EB2021018B9400310E65 /* Frameworks */,
+				2357EB2121018B9400310E65 /* Resources */,
+				A829F3D1B0C219241823A679 /* [CP] Embed Pods Frameworks */,
+				F43D86D66B62415172095C56 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactiveCocoaDemo;
+			productName = ReactiveCocoaDemo;
+			productReference = 2357EB2321018B9400310E65 /* ReactiveCocoaDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2357EB1B21018B9400310E65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = treee;
+				TargetAttributes = {
+					2357EB2221018B9400310E65 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2357EB1E21018B9400310E65 /* Build configuration list for PBXProject "ReactiveCocoaDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2357EB1A21018B9400310E65;
+			productRefGroup = 2357EB2421018B9400310E65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2357EB2221018B9400310E65 /* ReactiveCocoaDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2357EB2121018B9400310E65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2357EB4D2101946D00310E65 /* module.plist in Resources */,
+				2357EB3121018B9400310E65 /* LaunchScreen.storyboard in Resources */,
+				2357EB2E21018B9400310E65 /* Assets.xcassets in Resources */,
+				2357EB2C21018B9400310E65 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FC5814C21634CAF1790C11B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactiveCocoaDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A829F3D1B0C219241823A679 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveCocoaDemo/Pods-ReactiveCocoaDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SSKitSwift/SSKitSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSKitSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveCocoaDemo/Pods-ReactiveCocoaDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F43D86D66B62415172095C56 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveCocoaDemo/Pods-ReactiveCocoaDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2357EB1F21018B9400310E65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2357EB4E2101946D00310E65 /* ModuleManager.swift in Sources */,
+				2357EB422101945700310E65 /* SYViewVontroller.swift in Sources */,
+				2357EB482101946300310E65 /* CommandManager.swift in Sources */,
+				2357EB5C210195C900310E65 /* SyBarButtonItem.swift in Sources */,
+				2357EB572101952300310E65 /* ReactiveInputDemo.swift in Sources */,
+				2357EB3B21018F9300310E65 /* Import.swift in Sources */,
+				2357EB542101947300310E65 /* TableViewConver.swift in Sources */,
+				2357EB2921018B9400310E65 /* ViewController.swift in Sources */,
+				2357EB4F2101946D00310E65 /* ModuleProtocols.swift in Sources */,
+				2357EB532101947300310E65 /* TableViewExt.swift in Sources */,
+				2357EB2721018B9400310E65 /* AppDelegate.swift in Sources */,
+				2357EB472101946300310E65 /* Command.swift in Sources */,
+				2357EB412101945700310E65 /* SYNavigationController.swift in Sources */,
+				2357EB432101945700310E65 /* SYTableViewController.swift in Sources */,
+				2357EB5B210195C900310E65 /* SyTableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2357EB2A21018B9400310E65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2357EB2B21018B9400310E65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2357EB2F21018B9400310E65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2357EB3021018B9400310E65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2357EB3321018B9400310E65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2357EB3421018B9400310E65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2357EB3621018B9400310E65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6F548B2646C9DABA18644B1 /* Pods-ReactiveCocoaDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ReactiveCocoaDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.treee.-.ReactiveCocoaDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2357EB3721018B9400310E65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 963F6BD7222CD667C5033AB4 /* Pods-ReactiveCocoaDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ReactiveCocoaDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.treee.-.ReactiveCocoaDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2357EB1E21018B9400310E65 /* Build configuration list for PBXProject "ReactiveCocoaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2357EB3321018B9400310E65 /* Debug */,
+				2357EB3421018B9400310E65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2357EB3521018B9400310E65 /* Build configuration list for PBXNativeTarget "ReactiveCocoaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2357EB3621018B9400310E65 /* Debug */,
+				2357EB3721018B9400310E65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2357EB1B21018B9400310E65 /* Project object */;
+}
