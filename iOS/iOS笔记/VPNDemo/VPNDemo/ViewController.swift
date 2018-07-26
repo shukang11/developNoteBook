@@ -12,7 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        /**
+         参考github ladder 项目，由于是普通用户，并没有相关的开发权限
+         
+         */
     }
 
     override func didReceiveMemoryWarning() {

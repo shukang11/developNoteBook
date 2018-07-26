@@ -33,7 +33,7 @@ class ShareViewController: UIViewController, UIWebViewDelegate {
                     prov.loadItem(forTypeIdentifier: kUTTypeFileURL as String, options: nil, completionHandler: { (what, error) in
                         if let url:NSURL = what as? NSURL,
                             let data = NSData.init(contentsOf: url as URL) {
-                            let shareDir = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.audioExtension")
+                            let shareDir = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.zhianxin.testDemo")
                             if let filepath = shareDir?.appendingPathComponent(url.lastPathComponent!) {
                                 data.write(to: filepath, atomically: true)
                             }

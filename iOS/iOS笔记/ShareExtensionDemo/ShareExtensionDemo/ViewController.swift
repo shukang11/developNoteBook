@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         button.addTarget(self, action: #selector(self.buttonHandler), for: .touchUpInside)
         self.view.addSubview(button)
         
-        let shareDir = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.audioExtension")
+        let shareDir = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.zhianxin.testDemo")
         if let filepath = shareDir?.appendingPathComponent("temp.m4a"),
             let data = try? Data.init(contentsOf: filepath) {
             print("\(data.count)")
