@@ -39,6 +39,7 @@
     <SUITE FILE_PATH="coverage/LeetCode$Product_Of_Array_Except_Self.coverage" NAME="Product_Of_Array_Except_Self Coverage Results" MODIFIED="1524796969896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LeetCode$Unique_Binary_Search_Trees.coverage" NAME="Unique_Binary_Search_Trees Coverage Results" MODIFIED="1532396941252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LeetCode$Permutations.coverage" NAME="Permutations Coverage Results" MODIFIED="1531981586404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LeetCode$Perfect_Squares.coverage" NAME="Perfect_Squares Coverage Results" MODIFIED="1534299762356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LeetCode$Task_Scheduler.coverage" NAME="Task_Scheduler Coverage Results" MODIFIED="1525247628018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LeetCode$Search_Insert_Position.coverage" NAME="Search_Insert_Position Coverage Results" MODIFIED="1531703140586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LeetCode$Nim_Game.coverage" NAME="Nim_Game Coverage Results" MODIFIED="1533604297670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -58,11 +59,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Validate_Binary_Search_Tree.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Validate_Binary_Search_Tree.py">
+      <file leaf-file-name="Perfect_Squares.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Perfect_Squares.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+            <state relative-caret-position="280">
+              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -128,7 +129,6 @@
         <option value="$PROJECT_DIR$/Group_Anagrams.py" />
         <option value="$PROJECT_DIR$/Search_A_2D_Matrix_ii.py" />
         <option value="$PROJECT_DIR$/Longest_Increasing_Subsequence.py" />
-        <option value="$PROJECT_DIR$/Perfect_Squares.py" />
         <option value="$PROJECT_DIR$/Sort_Colors.py" />
         <option value="$PROJECT_DIR$/Three_Sum.py" />
         <option value="$PROJECT_DIR$/Find_First_And_Last_Position_Of_Element_In_Sorted_Array.py" />
@@ -139,6 +139,7 @@
         <option value="$PROJECT_DIR$/Letter_Case_Permutation.py" />
         <option value="$PROJECT_DIR$/Add_Digits.py" />
         <option value="$PROJECT_DIR$/Validate_Binary_Search_Tree.py" />
+        <option value="$PROJECT_DIR$/Perfect_Squares.py" />
       </list>
     </option>
   </component>
@@ -149,7 +150,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="48" />
+    <option name="x" value="46" />
     <option name="y" value="22" />
     <option name="width" value="1392" />
     <option name="height" value="878" />
@@ -169,8 +170,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -205,26 +206,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Add_Digits">
-    <configuration default="false" name="Nim_Game" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="LeetCode" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nim_Game.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.Perfect_Squares">
     <configuration default="false" name="Goat_Latin" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -296,6 +278,25 @@
       <module name="LeetCode" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Add_Digits.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Perfect_Squares" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="LeetCode" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Perfect_Squares.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -450,19 +451,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Nim_Game" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Goat_Latin" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Max_Consecutive_Ones" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Letter_Case_Permutation" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Add_Digits" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Goat_Latin" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Max_Consecutive_Ones" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Letter_Case_Permutation" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Add_Digits" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Perfect_Squares" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Add_Digits" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Letter_Case_Permutation" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Max_Consecutive_Ones" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Goat_Latin" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Nim_Game" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Perfect_Squares" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Add_Digits" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Letter_Case_Permutation" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Max_Consecutive_Ones" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Goat_Latin" />
       </list>
     </recent_temporary>
   </component>
@@ -492,14 +493,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="22" width="1392" height="878" extended-state="6" />
+    <frame x="46" y="22" width="1392" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20666666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20962963" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21315789" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21315789" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -797,7 +798,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Longest_Increasing_Subsequence.py" />
-    <entry file="file://$PROJECT_DIR$/Perfect_Squares.py" />
     <entry file="file://$PROJECT_DIR$/Group_Anagrams.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -873,6 +873,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Perfect_Squares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
           <folding />
         </state>
       </provider>
