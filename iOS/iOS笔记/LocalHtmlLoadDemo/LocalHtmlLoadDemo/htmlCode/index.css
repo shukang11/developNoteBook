@@ -1,0 +1,11 @@
+.content {
+	height: 300px;
+	width: 700px;
+	background-color: gray;
+	margin: 0 auto;
+	color: blue;
+	text-align: center;
+}
+.content:before {
+    content: "前缀";
+}

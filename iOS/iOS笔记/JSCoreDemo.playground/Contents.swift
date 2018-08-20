@@ -16,7 +16,7 @@ let jsv = context.evaluateScript(
 /// 返回最后一个脚本生成的值， 因为和执行一个js文件无异，我们在浏览器中不会返回最后一个值，返回的只在执行函数的上下文中才有意义，因此简单的 1 就会被返回
 
 let jsv1 = context.evaluateScript(
-    "1;"
+    "1"
 )
 jsv1?.toString
 menoryPos("jsv1", obj: jsv1)
@@ -66,26 +66,36 @@ let jsCallNativeMethod: @convention(block) (String) -> Void = {
     print("jsCallNativeMethod -> \(content)")
 }
 
-context.setObject(
-    unsafeBitCast(jsCallNativeMethod, to: AnyObject.self), forKeyedSubscript: "methodName" as NSCopying & NSObjectProtocol)
-context.evaluateScript("methodName('hahaha')")
-
+let logBlock: @convention(block) () -> () = {
+    print("begin log")
+    let args = JSContext.currentArguments()
+    for jsval in args! {
+        print(jsval)
+    }
+    print("end log")
+}
+context.setObject(jsCallNativeMethod, forKeyedSubscript: NSString.init(string: "methodName"))
+context.setObject(logBlock, forKeyedSubscript: NSString.init(string: "log"))
+context.evaluateScript("methodName('\(array)')")
 
 /**
  JSContext & JSExport
  js -> native
  */
-protocol HelperExport: JSExport {
-    func test()
+@objc protocol HelperExport: JSExport {
+    var name: String { get }
+    func test() -> String
 }
 
-class Helper: NSObject, HelperExport {
-    func test() {
-        print("hello test")
+@objc class Helper: NSObject, HelperExport {
+    var name: String = "helper name"
+    func test() -> String {
+        print("oncall text()")
+        return "text method"
     }
 }
 let helper = Helper()
-context.setObject(helper, forKeyedSubscript: "helper" as NSCopying & NSObjectProtocol)
-context.evaluateScript("helper.test();")
+context.setObject(Helper(), forKeyedSubscript: NSString.init(string: "helper"))
+context.evaluateScript("log(helper.name)")
 
 
