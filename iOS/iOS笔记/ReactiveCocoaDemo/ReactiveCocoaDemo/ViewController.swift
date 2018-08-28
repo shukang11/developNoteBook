@@ -35,7 +35,7 @@ class ViewController: SYTableViewController {
             d.cellType == TextCell.Key,
             let dict: [String: Any] = d.cellData as? [String: Any],
             let c: TextCell = cell as? TextCell {
-            c.titleLabel.text = "【TextCell】 \(dict["title"] ?? "")"
+            c.titleLabel.text = " \(dict["title"] ?? "")"
             c.titleLabel.textColor = UIColor.black
             return c
         }
@@ -81,6 +81,23 @@ class ViewController: SYTableViewController {
         var table = TableViewConvertTable()
         var section1 = TableViewConvertSection.init()
         section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "Demo1 输入用户名", "target": ReactiveInputDemo.self]))
+        
+        section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "RxSwift"]))
+        section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "Signal", "target": SignalPage.self]))
+        
+        section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "Observable - 可被监听的序列", "target": ObservablePage.self]))
+        section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "Single 是 Observable 的另外一个版本", "target": SinglePage.self]))
+        section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "Completable 是 Observable 的另外一个版本", "target": CompletePage.self]))
+        section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "Maybe 是 Observable 的另外一个版本", "target": MaybePage.self]))
+        section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "Driver 是 Observable 的另外一个版本", "target":  DriverPage.self]))
+        
+        section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "观察者", "target":  ObserverPage.self]))
+        section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "操作符", "target":  OperatorPage.self]))
+        
+        section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "示例"]))
+        section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "ImagePicker - 图片选择器", "target": ImagePickerPage.self]))
+        
+        
         table.append(section1)
         return table
     }
