@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		234BFD282135223A006020DE /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234BFD272135223A006020DE /* UIImagePickerController+Rx.swift */; };
+		234BFD2A213523DE006020DE /* ImagerPickerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234BFD29213523DE006020DE /* ImagerPickerPage.swift */; };
+		234BFD2C21352509006020DE /* UIViewController+Rxcreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234BFD2B21352509006020DE /* UIViewController+Rxcreate.swift */; };
 		2357EB2721018B9400310E65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB2621018B9400310E65 /* AppDelegate.swift */; };
 		2357EB2921018B9400310E65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB2821018B9400310E65 /* ViewController.swift */; };
 		2357EB2C21018B9400310E65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2357EB2A21018B9400310E65 /* Main.storyboard */; };
@@ -26,11 +29,22 @@
 		2357EB572101952300310E65 /* ReactiveInputDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB562101952300310E65 /* ReactiveInputDemo.swift */; };
 		2357EB5B210195C900310E65 /* SyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB59210195C900310E65 /* SyTableView.swift */; };
 		2357EB5C210195C900310E65 /* SyBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357EB5A210195C900310E65 /* SyBarButtonItem.swift */; };
+		235918C1212E96F1005BFE62 /* SignalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235918C0212E96F1005BFE62 /* SignalPage.swift */; };
+		235918E5212F9DA0005BFE62 /* ObservablePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235918E4212F9DA0005BFE62 /* ObservablePage.swift */; };
+		23AC22372134DC5A00C6A900 /* OperatorPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AC22362134DC5A00C6A900 /* OperatorPage.swift */; };
+		23D783152133A97600039B96 /* SinglePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D783142133A97600039B96 /* SinglePage.swift */; };
+		23D783172133C5AF00039B96 /* CompletePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D783162133C5AF00039B96 /* CompletePage.swift */; };
+		23D783192133C89300039B96 /* MaybePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D783182133C89300039B96 /* MaybePage.swift */; };
+		23D7831B2133CCBD00039B96 /* DriverPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D7831A2133CCBD00039B96 /* DriverPage.swift */; };
+		23D7831D2133ED1900039B96 /* ObserverPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D7831C2133ED1900039B96 /* ObserverPage.swift */; };
 		A8A75F7BD6DE10CF117B107F /* Pods_ReactiveCocoaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13470E83C1A5653CFE442AAE /* Pods_ReactiveCocoaDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13470E83C1A5653CFE442AAE /* Pods_ReactiveCocoaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveCocoaDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		234BFD272135223A006020DE /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
+		234BFD29213523DE006020DE /* ImagerPickerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagerPickerPage.swift; sourceTree = "<group>"; };
+		234BFD2B21352509006020DE /* UIViewController+Rxcreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rxcreate.swift"; sourceTree = "<group>"; };
 		2357EB2321018B9400310E65 /* ReactiveCocoaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCocoaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2357EB2621018B9400310E65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2357EB2821018B9400310E65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +66,14 @@
 		2357EB562101952300310E65 /* ReactiveInputDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveInputDemo.swift; sourceTree = "<group>"; };
 		2357EB59210195C900310E65 /* SyTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyTableView.swift; sourceTree = "<group>"; };
 		2357EB5A210195C900310E65 /* SyBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyBarButtonItem.swift; sourceTree = "<group>"; };
+		235918C0212E96F1005BFE62 /* SignalPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalPage.swift; sourceTree = "<group>"; };
+		235918E4212F9DA0005BFE62 /* ObservablePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservablePage.swift; sourceTree = "<group>"; };
+		23AC22362134DC5A00C6A900 /* OperatorPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorPage.swift; sourceTree = "<group>"; };
+		23D783142133A97600039B96 /* SinglePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePage.swift; sourceTree = "<group>"; };
+		23D783162133C5AF00039B96 /* CompletePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletePage.swift; sourceTree = "<group>"; };
+		23D783182133C89300039B96 /* MaybePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaybePage.swift; sourceTree = "<group>"; };
+		23D7831A2133CCBD00039B96 /* DriverPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverPage.swift; sourceTree = "<group>"; };
+		23D7831C2133ED1900039B96 /* ObserverPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverPage.swift; sourceTree = "<group>"; };
 		963F6BD7222CD667C5033AB4 /* Pods-ReactiveCocoaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoaDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoaDemo/Pods-ReactiveCocoaDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C6F548B2646C9DABA18644B1 /* Pods-ReactiveCocoaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoaDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoaDemo/Pods-ReactiveCocoaDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		234BFD2621352220006020DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				234BFD272135223A006020DE /* UIImagePickerController+Rx.swift */,
+				234BFD2B21352509006020DE /* UIViewController+Rxcreate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2357EB1A21018B9400310E65 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +134,7 @@
 		2357EB3821018EDE00310E65 /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				234BFD2621352220006020DE /* Extensions */,
 				2357EB3C2101944400310E65 /* Controllers */,
 				2357EB3921018F2600310E65 /* Tools */,
 			);
@@ -126,6 +158,15 @@
 			children = (
 				2357EB552101950300310E65 /* ReactiveInputDemo */,
 				2357EB3D2101945700310E65 /* BaseViewControllers */,
+				235918C0212E96F1005BFE62 /* SignalPage.swift */,
+				235918E4212F9DA0005BFE62 /* ObservablePage.swift */,
+				23D783142133A97600039B96 /* SinglePage.swift */,
+				23D783162133C5AF00039B96 /* CompletePage.swift */,
+				23D783182133C89300039B96 /* MaybePage.swift */,
+				23D7831A2133CCBD00039B96 /* DriverPage.swift */,
+				23D7831C2133ED1900039B96 /* ObserverPage.swift */,
+				23AC22362134DC5A00C6A900 /* OperatorPage.swift */,
+				234BFD29213523DE006020DE /* ImagerPickerPage.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -302,6 +343,8 @@
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SSKitSwift/SSKitSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
@@ -310,6 +353,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSKitSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
@@ -341,20 +386,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				2357EB4E2101946D00310E65 /* ModuleManager.swift in Sources */,
+				23AC22372134DC5A00C6A900 /* OperatorPage.swift in Sources */,
+				235918E5212F9DA0005BFE62 /* ObservablePage.swift in Sources */,
+				23D783172133C5AF00039B96 /* CompletePage.swift in Sources */,
+				234BFD2C21352509006020DE /* UIViewController+Rxcreate.swift in Sources */,
+				23D7831B2133CCBD00039B96 /* DriverPage.swift in Sources */,
 				2357EB422101945700310E65 /* SYViewVontroller.swift in Sources */,
+				234BFD282135223A006020DE /* UIImagePickerController+Rx.swift in Sources */,
 				2357EB482101946300310E65 /* CommandManager.swift in Sources */,
 				2357EB5C210195C900310E65 /* SyBarButtonItem.swift in Sources */,
 				2357EB572101952300310E65 /* ReactiveInputDemo.swift in Sources */,
 				2357EB3B21018F9300310E65 /* Import.swift in Sources */,
+				235918C1212E96F1005BFE62 /* SignalPage.swift in Sources */,
+				23D7831D2133ED1900039B96 /* ObserverPage.swift in Sources */,
 				2357EB542101947300310E65 /* TableViewConver.swift in Sources */,
 				2357EB2921018B9400310E65 /* ViewController.swift in Sources */,
 				2357EB4F2101946D00310E65 /* ModuleProtocols.swift in Sources */,
 				2357EB532101947300310E65 /* TableViewExt.swift in Sources */,
+				23D783192133C89300039B96 /* MaybePage.swift in Sources */,
 				2357EB2721018B9400310E65 /* AppDelegate.swift in Sources */,
 				2357EB472101946300310E65 /* Command.swift in Sources */,
 				2357EB412101945700310E65 /* SYNavigationController.swift in Sources */,
 				2357EB432101945700310E65 /* SYTableViewController.swift in Sources */,
+				23D783152133A97600039B96 /* SinglePage.swift in Sources */,
 				2357EB5B210195C900310E65 /* SyTableView.swift in Sources */,
+				234BFD2A213523DE006020DE /* ImagerPickerPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

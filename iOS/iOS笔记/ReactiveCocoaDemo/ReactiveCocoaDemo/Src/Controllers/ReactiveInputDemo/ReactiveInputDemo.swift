@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import ReactiveCocoa
 
 class ReactiveInputDemo: SYViewController {
     var nameLabel: UILabel = {
@@ -88,12 +89,19 @@ class ReactiveInputDemo: SYViewController {
     }
     
     func setUp() -> Void {
-        self.button.reactive.controlEvents(.touchUpInside).observeValues { (sender) in
-            print("\(self.nameInput.text)")
+        
+        self.nameInput.reactive.continuousTextValues.observeValues { (text) in
+            print("\(text)")
         }
+        
+        self.button.reactive.controlEvents(.touchUpInside).observeValues { (sender) in
+            print("\(self.nameInput.text ?? "")")
+        }
+        
         let validUsernameSignal = self.nameInput.reactive.continuousTextValues.map { (text) -> Bool in
             return self.isValidUsername(text: text)
         }
+        
         validUsernameSignal.map { (isValidUsername) -> UIColor in
             return isValidUsername ? UIColor.clear : UIColor.cyan
             }.observeValues { (backgroundColor) in
