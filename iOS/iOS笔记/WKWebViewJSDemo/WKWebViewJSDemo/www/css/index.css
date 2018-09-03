@@ -1,0 +1,25 @@
+body {
+	margin: 0 0;
+}
+
+.header {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.content {
+	padding-left: 20px;
+}
+
+ul.action-list {
+	background-color: white;
+}
+
+.action-list .cell {
+	height: 60px;
+	text-decoration: none;
+}
+.action-list .cell button {
+	font-size: 30px;
+	line-height: 40px;
+}
