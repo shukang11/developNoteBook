@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '8.1'
+
+target 'playground' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  inhibit_all_warnings!#不显示第三方库中的警告
+  
+  
+  pod 'SSKitSwift', git: 'https://github.com/jiazifa/SSKitSwift'
+  
+  pod 'SnapKit'
+  
+  pod 'SxrModuleManager', git: 'https://github.com/jiazifa/SxrModuleManager.git'
+
+  pod 'Kingfisher'
+  
+  pod 'NVActivityIndicatorView', '~> 4.0.1' # 加载指示器
+  
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
+  
+  pod 'SwiftLint'
+
+  pod 'Cartography', '~> 3.0'
+  
+end

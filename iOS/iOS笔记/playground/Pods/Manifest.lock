@@ -1,0 +1,63 @@
+PODS:
+  - Cartography (3.0.2)
+  - Kingfisher (4.4.0)
+  - NVActivityIndicatorView (4.0.1):
+    - NVActivityIndicatorView/Presenter (= 4.0.1)
+  - NVActivityIndicatorView/Presenter (4.0.1)
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.2.0)
+  - SnapKit (4.0.0)
+  - SSKitSwift (0.1.4)
+  - SwiftLint (0.27.0)
+  - SxrModuleManager (0.1.0)
+
+DEPENDENCIES:
+  - Cartography (~> 3.0)
+  - Kingfisher
+  - NVActivityIndicatorView (~> 4.0.1)
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - SnapKit
+  - SSKitSwift (from `https://github.com/jiazifa/SSKitSwift`)
+  - SwiftLint
+  - SxrModuleManager (from `https://github.com/jiazifa/SxrModuleManager.git`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Cartography
+    - Kingfisher
+    - NVActivityIndicatorView
+    - RxCocoa
+    - RxSwift
+    - SnapKit
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  SSKitSwift:
+    :git: https://github.com/jiazifa/SSKitSwift
+  SxrModuleManager:
+    :git: https://github.com/jiazifa/SxrModuleManager.git
+
+CHECKOUT OPTIONS:
+  SSKitSwift:
+    :commit: cfee82db0cb4cd3ad454cb2ead80554455a9731f
+    :git: https://github.com/jiazifa/SSKitSwift
+  SxrModuleManager:
+    :commit: 0097d6d25b7ed73d25cb8f3bb4e4cf26da61269e
+    :git: https://github.com/jiazifa/SxrModuleManager.git
+
+SPEC CHECKSUMS:
+  Cartography: 231190d7d0b3107ce8d67c54189f059a509b3760
+  Kingfisher: 62a43e03047a1ac5159d0be3ac62673ef4b99cc3
+  NVActivityIndicatorView: 77ed6d7b571643e24899e7858bf9ae2ee4c21f31
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SSKitSwift: fd25971d9e46add765b34d697705c03178c04ef5
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
+  SxrModuleManager: 06de2c2d7afadfd28bab14c293edd15090677908
+
+PODFILE CHECKSUM: 9dc153d8dadc0025147a6736c38dc6dac07e7ac6
+
+COCOAPODS: 1.5.3
