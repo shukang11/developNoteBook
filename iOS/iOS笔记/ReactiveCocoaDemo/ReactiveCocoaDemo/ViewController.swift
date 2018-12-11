@@ -81,6 +81,7 @@ class ViewController: SYTableViewController {
         var table = TableViewConvertTable()
         var section1 = TableViewConvertSection.init()
         section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "Demo1 输入用户名", "target": ReactiveInputDemo.self]))
+        section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "冷信号与热信号", "target": ReactiveSignalPage.self]))
         
         section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "RxSwift"]))
         section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "Signal", "target": SignalPage.self]))

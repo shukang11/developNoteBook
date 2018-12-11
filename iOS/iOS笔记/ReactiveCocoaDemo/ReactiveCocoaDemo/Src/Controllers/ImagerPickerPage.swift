@@ -61,7 +61,11 @@ extension ImagePickerPage {
                     .take(1)
             }
             .map { info in
-                return info[UIImagePickerControllerOriginalImage] as? UIImage
+                print("\(info)")
+                if let img = info[UIImagePickerControllerOriginalImage] as? UIImage {
+                    return img
+                }
+                return UIImage.init()
             }
             .bind(to: imageView.rx.image)
             .disposed(by: disposeBag)

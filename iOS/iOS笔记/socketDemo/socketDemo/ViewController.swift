@@ -10,9 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var chatFiled: UITextField!
+    @IBAction func sendMessage(_ sender: UIButton) {
+        if let content = self.chatFiled.text {
+            SocketManager.share.send(msg: content)
+            self.chatFiled.text = ""
+        }
+    }
+    @IBAction func connect(_ sender: UIButton) {
+        SocketManager.share.connect()
+    }
+    @IBAction func disconnect(_ sender: UIButton) {
+        SocketManager.share.disConnect()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {

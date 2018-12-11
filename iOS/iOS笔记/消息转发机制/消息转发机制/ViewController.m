@@ -22,6 +22,11 @@
     obj.number = @1;
     NSLog(@"%@", [obj.number stringValue]);
     NSLog(@"%@", obj.data);
+    
+    NSString *a = @"11";
+    NSString *a_copy = [a copy];
+    a = @"112";
+    NSLog(@"%@", a_copy);
 }
 
 

@@ -22,13 +22,24 @@ let php = Laungage.init(name: "PHP", version: 7)
 let encoder = JSONEncoder()
 let decoder = JSONDecoder()
 
-if let encoded = try? encoder.encode(swift) {
+if let encoded = try? encoder.encode(swift) { // to data
     if let json = String.init(data: encoded, encoding: String.Encoding.utf8) {
         print(json)
     }
     if let obj = try? decoder.decode(Laungage.self, from: encoded) {
         print("\(obj.name) and version: \(obj.version)")
     }
+}
+
+let o = ["real_name": "名字",
+         "age": 13] as [String : Any]
+struct UU: Codable {
+    var real_name: String
+    var age: Int
+}
+if let d = try? JSONSerialization.data(withJSONObject: o, options: []) {
+    let u = try? decoder.decode(UU.self, from: d)
+    print("\(u?.real_name)")
 }
 
 class People: Codable {
@@ -52,6 +63,32 @@ if let encoded = try? encoder.encode(zhangsan) {
         print(json)
     }
 }
+
+struct User: Codable {
+    var id: String
+    
+    var isMan: Bool
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        // 如果 key 为 female 映射到 isMan 上
+        case isMan = "female"
+    }
+}
+
+let u = User.init(id: "111", isMan: true)
+if let encoded = try? encoder.encode(u) {
+    if let json = String.init(data: encoded, encoding: .utf8) {
+        print(json)
+    }
+    
+    if let data = "{\"id\":\"111\",\"female\":\"true\"}".data(using: .utf8),
+        let obj = try? decoder.decode(User.self, from: data) {
+        print("\(obj.isMan)")
+    }
+}
+
+print("===")
 
 
 ///kvc--> 优化keypath
@@ -88,4 +125,12 @@ enterWrap()
 let cities = ["shanghai": 24_256_800, "karachi": 23_500_000, "beijing": 21_516_000, "seoul": 9_995_000]
 let massiveCities = cities.filter({ $0.value > 10_000_000 })
 print(massiveCities["shanghai"])
+
+if let utf8Data = "严".data(using: .utf8) {
+    let d = [UInt8](utf8Data)
+    for per in d {
+        let perString = String(format: "%2X", per)
+        print(perString)
+    }
+}
 
