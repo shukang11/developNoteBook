@@ -115,20 +115,21 @@ extension SignalPage {
         let _ = everythingValid.bind(to: button.rx.isEnabled).disposed(by: disposeBag)
         
         // 订阅按钮的点击事件
-        let _ = button.rx.controlEvent(UIControlEvents.touchUpInside).subscribe { [weak self] (event) in
-            print("\(self?.button.title(for: .normal) ?? "")")
+        let _ = button.rx.controlEvent(UIControlEvents.touchUpInside).subscribe { [unowned self] (event) in
+            print("\(self.button.title(for: .normal) ?? "")")
         }
         // 同上
-        let _ = button.rx.tap.asObservable().subscribe { [weak self] (event) in
-            self?.demo2()
-            print("\(self?.nameInput.text ?? "")")
+        let _ = button.rx.tap.asObservable().subscribe { [unowned self] (event) in
+            self.demo2()
+            print("\(self.nameInput.text ?? "")")
             
         }
     }
     
     func demo2() -> Void {
         // 创建被观察者
-        let requestStream = Observable.just("https://api.github.com/users").map {$0.trimString}
+        let _ = Observable.just("https://api.github.com/users").map {$0.trimString}
+
 //        requestStream.bind(to: self.nameLabel.rx.text)
     }
 }

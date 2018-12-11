@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2348CE70218C31E8001A1C8E /* ReactiveSignalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2348CE6F218C31E8001A1C8E /* ReactiveSignalPage.swift */; };
 		234BFD282135223A006020DE /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234BFD272135223A006020DE /* UIImagePickerController+Rx.swift */; };
 		234BFD2A213523DE006020DE /* ImagerPickerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234BFD29213523DE006020DE /* ImagerPickerPage.swift */; };
 		234BFD2C21352509006020DE /* UIViewController+Rxcreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234BFD2B21352509006020DE /* UIViewController+Rxcreate.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		13470E83C1A5653CFE442AAE /* Pods_ReactiveCocoaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveCocoaDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2348CE6F218C31E8001A1C8E /* ReactiveSignalPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveSignalPage.swift; sourceTree = "<group>"; };
 		234BFD272135223A006020DE /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
 		234BFD29213523DE006020DE /* ImagerPickerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagerPickerPage.swift; sourceTree = "<group>"; };
 		234BFD2B21352509006020DE /* UIViewController+Rxcreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rxcreate.swift"; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				2357EB562101952300310E65 /* ReactiveInputDemo.swift */,
+				2348CE6F218C31E8001A1C8E /* ReactiveSignalPage.swift */,
 			);
 			path = ReactiveInputDemo;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				2357EB4F2101946D00310E65 /* ModuleProtocols.swift in Sources */,
 				2357EB532101947300310E65 /* TableViewExt.swift in Sources */,
 				23D783192133C89300039B96 /* MaybePage.swift in Sources */,
+				2348CE70218C31E8001A1C8E /* ReactiveSignalPage.swift in Sources */,
 				2357EB2721018B9400310E65 /* AppDelegate.swift in Sources */,
 				2357EB472101946300310E65 /* Command.swift in Sources */,
 				2357EB412101945700310E65 /* SYNavigationController.swift in Sources */,

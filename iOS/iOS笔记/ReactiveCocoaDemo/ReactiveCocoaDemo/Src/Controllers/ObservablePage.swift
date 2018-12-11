@@ -23,9 +23,9 @@ class ObservablePage: SYViewController {
          
          例如可以将温度看做一个序列，然后检测这个温度值，如果高于某个值的时候，就将空调打开
          */
-//        demo1()
+        demo1()
         demo2()
-        
+        demo3()
     }
     
     func demo1() -> Void {
@@ -75,7 +75,15 @@ class ObservablePage: SYViewController {
     }
     
     func demo3() -> Void {
-        
+        let titleObs = Observable<String>.create { (observer) -> Disposable in
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3, execute: {
+                observer.onNext("修改后的title")
+                observer.onCompleted()
+            })
+            return Disposables.create { }
+        }
+
+        _ = titleObs.bind(to: self.rx.title)
     }
 }
 

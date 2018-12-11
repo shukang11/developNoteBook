@@ -31,6 +31,7 @@ public extension SXRCompatible {
 
 extension Int: SXRCompatible {}
 extension String: SXRCompatible {}
+extension Float: SXRCompatible {}
 
 extension Sexxar where Base == String {
     func test() {
@@ -40,4 +41,4 @@ extension Sexxar where Base == String {
 
 3.sxr.base
 "tt".sxr.test()
-
+Float(3.34).sxr.base
