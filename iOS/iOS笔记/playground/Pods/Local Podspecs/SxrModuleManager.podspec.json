@@ -1,0 +1,22 @@
+{
+  "name": "SxrModuleManager",
+  "version": "0.1.0",
+  "summary": "A short description of SxrModuleManager.",
+  "description": "the idea is come from douban.com",
+  "homepage": "https://github.com/jiazifa/SxrModuleManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jiazifa": "sunshukang30@163.com"
+  },
+  "source": {
+    "git": "https://github.com/jiazifa/SxrModuleManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SxrModuleManager/*"
+}

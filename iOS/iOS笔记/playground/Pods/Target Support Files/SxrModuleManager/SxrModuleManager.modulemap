@@ -1,0 +1,6 @@
+framework module SxrModuleManager {
+  umbrella header "SxrModuleManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
