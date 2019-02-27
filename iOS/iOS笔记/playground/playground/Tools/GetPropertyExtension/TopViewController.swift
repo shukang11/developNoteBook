@@ -26,3 +26,19 @@ extension UIApplication {
     }
 }
 
+public struct Log {
+    static func assertionFailure(_ message: @autoclosure () -> String, file: StaticString = #file, line: UInt = #line) {
+        Swift.assertionFailure("[LineSDK] \(message())", file: file, line: line)
+    }
+    
+    static func fatalError(_ message: @autoclosure () -> String, file: StaticString = #file, line: UInt = #line) -> Never {
+        Swift.fatalError("[LineSDK] \(message())", file: file, line: line)
+    }
+    
+    static func print(_ items: Any...) {
+        let s = items.reduce("") { result, next in
+            return result + String(describing: next)
+        }
+        Swift.print("[LineSDK] \(s)")
+    }
+}

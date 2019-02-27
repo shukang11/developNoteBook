@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SSKitSwift
 
 class AccountStore: NSObject {
     
