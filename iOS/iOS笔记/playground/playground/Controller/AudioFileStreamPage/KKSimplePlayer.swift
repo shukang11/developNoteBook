@@ -182,13 +182,13 @@ extension KKSimplePlayer {
             status = AudioFileStreamGetProperty(audioFileStream, kAudioFileStreamProperty_BitRate, &dataSize, &o)
             if status != noErr { break }
             self.bitRate = o
-            DLog("\(bitRate)")
+            print("\(bitRate)")
             
             
             var offset: UInt32 = 0
             status = AudioFileStreamGetProperty(audioFileStream, kAudioFileStreamProperty_DataOffset, &dataSize, &offset)
             if status != noErr { break }
-            DLog("\(offset)")
+            print("\(offset)")
             
             break
         case kAudioFileStreamProperty_DataFormat:
@@ -197,11 +197,11 @@ extension KKSimplePlayer {
             dataSize = UInt32(MemoryLayout<AudioStreamBasicDescription>.size)
             status = AudioFileStreamGetProperty(audioFileStream, propertID, &dataSize, &audioStreamDescription)
             if status != noErr {
-                DLog("cant read AudioStreamBasicDescription")
+                print("cant read AudioStreamBasicDescription")
                 break
             }
             self.packetDuration = self.calculatePacketDuration(format: audioStreamDescription)
-            DLog("\(self.packetDuration)")
+            print("\(self.packetDuration)")
             
             /// create the audio queue
             self.createAudioQueue(audioStreamDescription: audioStreamDescription)
@@ -230,7 +230,7 @@ extension KKSimplePlayer {
             status = AudioFileStreamParseBytes(aid, numberOfBytes, inputData, .init(rawValue: 0))
             assert(status == noErr)
         }
-        DLog("\(self.packets.count)")
+        print("\(self.packets.count)")
         
     }
     
@@ -260,7 +260,7 @@ extension KKSimplePlayer {
     }
     
     func calculatePacketDuration(format: AudioStreamBasicDescription) -> TimeInterval {
-        DLog("\(format)")
+        print("\(format)")
         var o = TimeInterval(0.0)
         if format.mSampleRate > 0 {
             o = Double(format.mFramesPerPacket) / Double(format.mSampleRate)
@@ -285,14 +285,14 @@ func KKAudioFileStreamPacketsCallback(clientData: UnsafeMutableRawPointer, numbe
 
 func KKAudioQueueOutputCallback(clientData: UnsafeMutableRawPointer, AQ: AudioQueueRef, buffer: AudioQueueBufferRef) {
     let this = Unmanaged<KKSimplePlayer>.fromOpaque(clientData).takeUnretainedValue()
-    DLog("KKAudioQueueOutputCallback called")
+    print("KKAudioQueueOutputCallback called")
     AudioQueueFreeBuffer(AQ, buffer)
     
 }
 
 func KKAudioQueueRunningListener(clientData: UnsafeMutableRawPointer, AQ: AudioQueueRef, propertyID: AudioQueuePropertyID) {
     let this = Unmanaged<KKSimplePlayer>.fromOpaque(clientData).takeUnretainedValue()
-    DLog("KKAudioQueueRunningListener called")
+    print("KKAudioQueueRunningListener called")
     
 }
 

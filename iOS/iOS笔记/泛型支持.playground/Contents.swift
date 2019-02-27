@@ -80,4 +80,18 @@ let v = UIView.init()
 work(worker: v)
 
 
+func map<Elements, T>(ins: [Elements], transform: (Elements) -> T) -> [T] {
+    var result = [T]()
+    for i in ins {
+        result.append(transform(i))
+    }
+    return result
+}
 
+let mapParams = [1, 2, 3, 5]
+let newParams = map(ins: mapParams) { (i) -> String in
+    return "\(i)"
+}
+mapParams.map { (i) -> String in
+    return "\(i)"
+}

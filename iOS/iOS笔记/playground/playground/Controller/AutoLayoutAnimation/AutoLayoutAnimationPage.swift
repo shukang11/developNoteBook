@@ -60,17 +60,14 @@ class AutoLayoutAnimationPage: SYViewController {
         trade(trade: .Buy(stack: "APPL", amount: 100))
         trade(trade: .Sell(stack: "TSLA", amount: 100))
         let tower = Desktop.Tower(selectGPU(selectCPU(selectRAM((0, "", "")))))
-        DLog(tower)
-        
-        
     }
     
     
     func trade(trade: Trade) {// 想访问这些值。需要用到匹配模式
         if case let Trade.Buy(stack, amount) = trade {
-            DLog("buy \(stack)  \(amount)份")
+            print("buy \(stack)  \(amount)份")
         }else if case let Trade.Sell(stack, amount) = trade {
-            DLog("sell \(stack)  \(amount)份")
+            print("sell \(stack)  \(amount)份")
         }
     }
     
@@ -88,7 +85,7 @@ class AutoLayoutAnimationPage: SYViewController {
 class AView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
-        DLog("AView layoutSubviews")
+        print("AView layoutSubviews")
     }
 }
 

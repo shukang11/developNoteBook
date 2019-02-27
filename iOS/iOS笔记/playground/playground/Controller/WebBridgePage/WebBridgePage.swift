@@ -44,13 +44,11 @@ class WebBridgePage: SYViewController {
     }
 }
 
-
 extension WebBridgePage: WKNavigationDelegate {
     //MARK: 加载前判断是否需要加载
     // 是否允许跳转
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if let url = navigationAction.request.url {
-            DLog("\(url)")
             if (self.bridge.evaluate(url: url) == true) {
                 // 此处需要完善原生端的base，主要是可以对js端的各种回应
                 decisionHandler(.cancel)
@@ -59,7 +57,6 @@ extension WebBridgePage: WKNavigationDelegate {
         }
         decisionHandler(.allow)
     }
-    
     
     //MARK:下载指定内容的回调
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
@@ -87,7 +84,6 @@ extension WebBridgePage: WKUIDelegate {
     }
     
     func webViewDidClose(_ webView: WKWebView) {
-        DLog("webViewDidClose call close() successed")
     }
     
     // 显示确认按钮

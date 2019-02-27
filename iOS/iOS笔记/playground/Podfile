@@ -19,8 +19,6 @@ target 'playground' do
   
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
-  
-  pod 'SwiftLint'
 
   pod 'Cartography', '~> 3.0'
   

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SSKitSwift
 
 protocol SettingsPropertyFactoryDelegate: class {
     func asyncMethodDidStart(_ settingsPropertyFactory: SettingsPropertyFactory)

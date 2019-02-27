@@ -49,8 +49,8 @@ class BlockPage: SYViewController {
     func block3() -> Void {
         var value = "11"
         let b3: () -> () = {
-            
+            value = "33"
         }
-        
+        b3()
     }
 }

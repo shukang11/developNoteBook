@@ -31,7 +31,7 @@ class SettingsPropertyTextValueCellDescriptor: SettingsPropertyCellDescriptorTyp
             do {
                 try self.settingsProperty << SettingsPropertyValue.string(value: stringValue)
             }catch let e as NSError {
-                DLog("error \(e)")
+                print("error \(e)")
             }
         }
     }
