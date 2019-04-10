@@ -47,20 +47,18 @@ class JSWebPage: SYViewController, UIWebViewDelegate {
     }
     
     func webViewDidFinishLoad(_ webView: UIWebView) {
-        guard let pa = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first else { return }
-//        let targetPath = "\(pa)/20160528 171009.m4a"
-        let targetPath = "\(pa)/wallhaven-540738.png"
-
-//        if let filePath = Bundle.main.path(forResource: "20160528 171009.m4a", ofType: nil), let pa = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first {
-//            let targetPath = "\(pa)/20160528 171009.m4a"
-//            let data = NSData.init(contentsOf: URL.init(fileURLWithPath: filePath))
-//            data?.write(to: URL.init(fileURLWithPath: targetPath), atomically: false)
-//            print("\(targetPath)")
-//        }
-        if let jsContext: JSContext = webView.value(forKeyPath: "documentView.webView.mainFrame.javaScriptContext") as? JSContext/*,
-            let path = Bundle.main.path(forResource: "20160528 171009.m4a", ofType: nil)*/ {
+        let fileName = "20160528 171009.m4a"
+//        let fileName = "wallhaven-540738.png"
+        guard let sourcePath = Bundle.main.path(forResource: fileName, ofType: nil) else { return }
+        let sourceURL = URL(fileURLWithPath: sourcePath)
+        var targetPath = ""
+        if #available(iOS 10.0, *) {
+            let targetURL = FileManager.default.temporaryDirectory.appendingPathComponent(fileName)
+            try? FileManager.default.copyItem(at: sourceURL, to: targetURL)
+            targetPath = targetURL.absoluteString.replaceString(replace: "file://", by: "")
+        }
+        if let jsContext: JSContext = webView.value(forKeyPath: "documentView.webView.mainFrame.javaScriptContext") as? JSContext {
                 let path = targetPath
-                
             let arg = "_privateF(\"\(path)\");"
             print("\(arg)")
             jsContext.evaluateScript(arg)

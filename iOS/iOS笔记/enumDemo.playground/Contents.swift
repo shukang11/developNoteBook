@@ -86,8 +86,18 @@ enum Launguage: String {
         }
     }
 }
-let le = Launguage.java
+let le = Launguage.python
 print(le.rawValue)
 
 let builder = Launguage.createDemo(with: le)
 builder.buildADemo()
+
+// 同构
+enum Add<T, U> {
+    case inLeft(T)
+    case inRight(U)
+}
+
+let _ = Add<Int, String>.inLeft(10)
+
+

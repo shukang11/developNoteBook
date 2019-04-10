@@ -7,6 +7,10 @@
 		body {
 			background-color: #f2f2f2;
 		}
+    #audioTag {
+        height: 100px;
+        width: 300px;
+    }
 	</style>
 </head>
 <body>
@@ -14,23 +18,25 @@
 	<p id="content"></p>
 	<hr>
 	<p id="console"></p>
-    <img id="image" src=""/>
+<!--    <img id="image" src=""/>-->
 	<audio id="audioTag" src=""></audio>
 <script type="text/javascript">
-	
 	function _privateF(args) {
 		if (args != null) {
 			var content = document.getElementById("content")
 			content.innerHTML = args
-<!--            var image = document.getElementById("audioTag");-->
-            var image = document.getElementById("image");
+            var image = document.getElementById("audioTag");
+<!--            var image = document.getElementById("image");-->
 			image.src = args
             
 			var fso = new ActiveXObject("Scripting.FileSystemObject");
 			var consoleContent = document.getElementById("console");
+            consoleContent.innerHTML += "测试内容"
 			if (fso !== null) {
 				consoleContent.innerHTML += "fso 不为空"
-			}
+            } else {
+                consoleContent.innerHTML += "fso 为空"
+            }
 		}
 	}
 </script>

@@ -96,6 +96,8 @@ class ViewController: SYTableViewController {
         section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "JS传值", "target": JSWebPage.self]))
         section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "多线程异步统一回调", "target": MutilDownloadPage.self]))
         section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "自动布局动画", "target": AutoLayoutAnimationPage.self]))
+        section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "贝塞尔曲线", "target": BenzierViewController.self]))
+        
         section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "AudioFileStream", "target": AudioFileStreamPage.self]))
         section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "**解析器示例", "target": InterpreterPage.self]))
         section1.append(TableViewConvertCell.init(cellType: TextCell.Key, cellClazz: TextCell.self, height: 44.0, cellData: ["title": "路由模块", "target": URLPage.self]))

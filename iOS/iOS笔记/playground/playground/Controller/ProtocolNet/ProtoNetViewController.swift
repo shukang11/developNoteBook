@@ -24,9 +24,7 @@ class ProtoNetViewController: SYViewController {
             }
         }
     }
-    
 }
-
 
 class Delegate<Input, Output> {
     init() {}

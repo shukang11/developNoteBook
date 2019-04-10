@@ -22,6 +22,7 @@
 		23327FA92181969800EB6C55 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23327FA82181969800EB6C55 /* Token.swift */; };
 		23327FAB2181982700EB6C55 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23327FAA2181982700EB6C55 /* Lexer.swift */; };
 		23327FC12182B02E00EB6C55 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23327FC02182B02E00EB6C55 /* Parser.swift */; };
+		23330AA42230B4940040ACF5 /* BenzierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23330AA32230B4940040ACF5 /* BenzierViewController.swift */; };
 		2333D797217620F600E91B46 /* testmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2333D796217620F600E91B46 /* testmusic.mp3 */; };
 		233679BE208EBA6100C89DC6 /* HUDExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233679A5208EBA6100C89DC6 /* HUDExt.swift */; };
 		233679BF208EBA6100C89DC6 /* RouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233679A7208EBA6100C89DC6 /* RouterTest.swift */; };
@@ -185,6 +186,7 @@
 		23327FB72182ACE700EB6C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23327FBE2182AD0A00EB6C55 /* TestToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestToken.swift; sourceTree = "<group>"; };
 		23327FC02182B02E00EB6C55 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		23330AA32230B4940040ACF5 /* BenzierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenzierViewController.swift; sourceTree = "<group>"; };
 		2333D796217620F600E91B46 /* testmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = testmusic.mp3; sourceTree = "<group>"; };
 		233679A5208EBA6100C89DC6 /* HUDExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDExt.swift; sourceTree = "<group>"; };
 		233679A7208EBA6100C89DC6 /* RouterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterTest.swift; sourceTree = "<group>"; };
@@ -416,6 +418,14 @@
 			path = utils;
 			sourceTree = "<group>";
 		};
+		23330AA22230B44C0040ACF5 /* LayerPage */ = {
+			isa = PBXGroup;
+			children = (
+				23330AA32230B4940040ACF5 /* BenzierViewController.swift */,
+			);
+			path = LayerPage;
+			sourceTree = "<group>";
+		};
 		233679A3208EBA6100C89DC6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -527,6 +537,7 @@
 		233679CE208EBA7100C89DC6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				23330AA22230B44C0040ACF5 /* LayerPage */,
 				23AD88A0222548D600F2AB82 /* ProtocolNet */,
 				23532CD421900E27009D4D03 /* FromWire */,
 				2348CE66218BEE26001A1C8E /* DynamicTableView */,
@@ -1310,6 +1321,7 @@
 				230DC5FF20C4C986003BEFF8 /* ItemDetailPage.swift in Sources */,
 				2348CE63218BEC07001A1C8E /* XIBTextCell.swift in Sources */,
 				23C83E1D2192D5DF0019AA0B /* UIFont+FontSpec.swift in Sources */,
+				23330AA42230B4940040ACF5 /* BenzierViewController.swift in Sources */,
 				23980A2F20C7E00D00AA6E94 /* CerEncoderPage.swift in Sources */,
 				23532CD821900ED2009D4D03 /* importImpl.swift in Sources */,
 				23327FA92181969800EB6C55 /* Token.swift in Sources */,

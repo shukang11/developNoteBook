@@ -134,3 +134,54 @@ if let utf8Data = "严".data(using: .utf8) {
     }
 }
 
+enum Flow: Codable {
+    case login(String, String)
+    case logout
+}
+extension Flow {
+    
+    enum CodableKeys: String, CodingKey { case login, logout, name, password }
+    
+    init(from decoder: Decoder) throws {
+        do {
+            let values = try decoder.container(keyedBy: CodableKeys.self)
+            if let name = try? values.decode(String.self, forKey: .name),
+                let password = try? values.decode(String.self, forKey: .password) {
+                self  = .login(name, password)
+                return
+            }
+            self = .logout
+        }catch {
+            throw error
+        }
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodableKeys.self)
+        switch self {
+        case .logout:
+            try container.encode("logout", forKey: .logout)
+        case let .login(name, password):
+            try container.encode(name, forKey: .name)
+            try container.encode(password, forKey: .password)
+        }
+    }
+}
+
+struct Model: Codable {
+    var flow: Flow
+}
+
+let s =
+"""
+{"flow": {"name": "11", "password": "123456"}}
+"""
+if let data = s.data(using: .utf8) {
+    let decoder = JSONDecoder()
+    do {
+        let c = try decoder.decode(Model.self, from: data)
+        print(c)
+    } catch let e {
+        print(e)
+    }
+}
