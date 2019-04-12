@@ -24,7 +24,7 @@ class Solution(object):
                 result.append(index)
             else:
                 info[to_find] = index
-            print(str(info) + 'and' + str(index))
+            print(str(info) + 'index is' + str(index))
         return result
 
 if __name__ == '__main__':
