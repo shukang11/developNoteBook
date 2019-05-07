@@ -45,12 +45,6 @@
 		2348CE43218ACC96001A1C8E /* WebBridgePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2348CE42218ACC96001A1C8E /* WebBridgePage.swift */; };
 		2348CE49218AFC28001A1C8E /* WebBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2348CE48218AFC28001A1C8E /* WebBridge.swift */; };
 		2348CE4D218AFD1D001A1C8E /* WebEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2348CE4C218AFD1D001A1C8E /* WebEngine.swift */; };
-		2348CE57218B02CC001A1C8E /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = 2348CE50218B02CC001A1C8E /* main.css */; };
-		2348CE58218B02CC001A1C8E /* bridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 2348CE52218B02CC001A1C8E /* bridge.js */; };
-		2348CE59218B02CC001A1C8E /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 2348CE53218B02CC001A1C8E /* main.js */; };
-		2348CE5A218B02CC001A1C8E /* dao.js in Resources */ = {isa = PBXBuildFile; fileRef = 2348CE54218B02CC001A1C8E /* dao.js */; };
-		2348CE5B218B02CC001A1C8E /* utils.js in Resources */ = {isa = PBXBuildFile; fileRef = 2348CE55218B02CC001A1C8E /* utils.js */; };
-		2348CE5C218B02CC001A1C8E /* bridgeIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 2348CE56218B02CC001A1C8E /* bridgeIndex.html */; };
 		2348CE63218BEC07001A1C8E /* XIBTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2348CE62218BEC07001A1C8E /* XIBTextCell.swift */; };
 		2348CE65218BEC17001A1C8E /* XIBTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2348CE64218BEC17001A1C8E /* XIBTextCell.xib */; };
 		2348CE68218BEE44001A1C8E /* DynamicTableViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2348CE67218BEE44001A1C8E /* DynamicTableViewPage.swift */; };
@@ -131,6 +125,7 @@
 		23F2048B21BF469900CEF844 /* 每天懂一点好玩心理学.epub in Resources */ = {isa = PBXBuildFile; fileRef = 23F2048A21BF469900CEF844 /* 每天懂一点好玩心理学.epub */; };
 		23F2048E21BF46CD00CEF844 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F2048D21BF46CD00CEF844 /* Utils.swift */; };
 		23F2049121BF470000CEF844 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F2049021BF470000CEF844 /* BookModel.swift */; };
+		23FA4EFD2266CD00005F9EB0 /* bridgeHTML in Resources */ = {isa = PBXBuildFile; fileRef = 23FA4EFC2266CD00005F9EB0 /* bridgeHTML */; };
 		43B6381381817C660C059E54 /* Pods_playground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7343B679BE1BE3E0981DAB33 /* Pods_playground.framework */; };
 /* End PBXBuildFile section */
 
@@ -209,12 +204,6 @@
 		2348CE42218ACC96001A1C8E /* WebBridgePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBridgePage.swift; sourceTree = "<group>"; };
 		2348CE48218AFC28001A1C8E /* WebBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBridge.swift; sourceTree = "<group>"; };
 		2348CE4C218AFD1D001A1C8E /* WebEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebEngine.swift; sourceTree = "<group>"; };
-		2348CE50218B02CC001A1C8E /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = main.css; sourceTree = "<group>"; };
-		2348CE52218B02CC001A1C8E /* bridge.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bridge.js; sourceTree = "<group>"; };
-		2348CE53218B02CC001A1C8E /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
-		2348CE54218B02CC001A1C8E /* dao.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = dao.js; sourceTree = "<group>"; };
-		2348CE55218B02CC001A1C8E /* utils.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = utils.js; sourceTree = "<group>"; };
-		2348CE56218B02CC001A1C8E /* bridgeIndex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bridgeIndex.html; sourceTree = "<group>"; };
 		2348CE62218BEC07001A1C8E /* XIBTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBTextCell.swift; sourceTree = "<group>"; };
 		2348CE64218BEC17001A1C8E /* XIBTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBTextCell.xib; sourceTree = "<group>"; };
 		2348CE67218BEE44001A1C8E /* DynamicTableViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTableViewPage.swift; sourceTree = "<group>"; };
@@ -299,6 +288,7 @@
 		23F2048A21BF469900CEF844 /* 每天懂一点好玩心理学.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "每天懂一点好玩心理学.epub"; sourceTree = "<group>"; };
 		23F2048D21BF46CD00CEF844 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		23F2049021BF470000CEF844 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		23FA4EFC2266CD00005F9EB0 /* bridgeHTML */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bridgeHTML; sourceTree = "<group>"; };
 		7343B679BE1BE3E0981DAB33 /* Pods_playground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_playground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A79760E2B4DC9DFB6FD0DD5 /* Pods-playground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-playground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-playground/Pods-playground.debug.xcconfig"; sourceTree = "<group>"; };
 		AD1D660D89B7C108685963D1 /* Pods-playground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-playground.release.xcconfig"; path = "Pods/Target Support Files/Pods-playground/Pods-playground.release.xcconfig"; sourceTree = "<group>"; };
@@ -602,7 +592,7 @@
 		2348CE41218ACC7F001A1C8E /* WebBridgePage */ = {
 			isa = PBXGroup;
 			children = (
-				2348CE4E218B02CC001A1C8E /* bridgeHTML */,
+				23FA4EFC2266CD00005F9EB0 /* bridgeHTML */,
 				2348CE42218ACC96001A1C8E /* WebBridgePage.swift */,
 			);
 			path = WebBridgePage;
@@ -615,35 +605,6 @@
 				2348CE4C218AFD1D001A1C8E /* WebEngine.swift */,
 			);
 			path = WebBridge;
-			sourceTree = "<group>";
-		};
-		2348CE4E218B02CC001A1C8E /* bridgeHTML */ = {
-			isa = PBXGroup;
-			children = (
-				2348CE4F218B02CC001A1C8E /* css */,
-				2348CE51218B02CC001A1C8E /* js */,
-				2348CE56218B02CC001A1C8E /* bridgeIndex.html */,
-			);
-			path = bridgeHTML;
-			sourceTree = "<group>";
-		};
-		2348CE4F218B02CC001A1C8E /* css */ = {
-			isa = PBXGroup;
-			children = (
-				2348CE50218B02CC001A1C8E /* main.css */,
-			);
-			path = css;
-			sourceTree = "<group>";
-		};
-		2348CE51218B02CC001A1C8E /* js */ = {
-			isa = PBXGroup;
-			children = (
-				2348CE52218B02CC001A1C8E /* bridge.js */,
-				2348CE53218B02CC001A1C8E /* main.js */,
-				2348CE54218B02CC001A1C8E /* dao.js */,
-				2348CE55218B02CC001A1C8E /* utils.js */,
-			);
-			path = js;
 			sourceTree = "<group>";
 		};
 		2348CE61218BEBE8001A1C8E /* Views */ = {
@@ -1172,19 +1133,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				233679C3208EBA6100C89DC6 /* module.plist in Resources */,
+				23FA4EFD2266CD00005F9EB0 /* bridgeHTML in Resources */,
 				23980A2C20C7DFD800AA6E94 /* jmmapp.cer in Resources */,
 				233679C0208EBA6100C89DC6 /* RouterMap.plist in Resources */,
 				2348CE65218BEC17001A1C8E /* XIBTextCell.xib in Resources */,
-				2348CE5B218B02CC001A1C8E /* utils.js in Resources */,
 				233679DD208EC2DB00C89DC6 /* wallhaven-540738.png in Resources */,
-				2348CE5C218B02CC001A1C8E /* bridgeIndex.html in Resources */,
-				2348CE5A218B02CC001A1C8E /* dao.js in Resources */,
 				23D99B8F208EB5B4002F7C3C /* LaunchScreen.storyboard in Resources */,
 				23D64D7C20E4CC97004FA171 /* 20160528 171009.m4a in Resources */,
-				2348CE58218B02CC001A1C8E /* bridge.js in Resources */,
-				2348CE57218B02CC001A1C8E /* main.css in Resources */,
 				23D64D7A20E4BE0F004FA171 /* jsContentPage.html in Resources */,
-				2348CE59218B02CC001A1C8E /* main.js in Resources */,
 				2333D797217620F600E91B46 /* testmusic.mp3 in Resources */,
 				23F2048B21BF469900CEF844 /* 每天懂一点好玩心理学.epub in Resources */,
 				23D99B8C208EB5B4002F7C3C /* Assets.xcassets in Resources */,

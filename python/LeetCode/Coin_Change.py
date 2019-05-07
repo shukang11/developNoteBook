@@ -9,8 +9,9 @@ class Solution(object):
     def coinChange(self, coins, amount):
         rt = [-1] * (amount + 1)
         rt[0] = 0
-        for i in range(amount + 1):
-            for j in coins:
+        for i in range(amount + 1): # 从0开始遍历
+            for j in coins: # 在备选的硬币中，如果硬币大于i，则不可用；
+            #如果此硬币在计算过的rt中找到了符合的，则可以通过,
                 if j > i:
                     continue
                 if rt[i-j] != -1:

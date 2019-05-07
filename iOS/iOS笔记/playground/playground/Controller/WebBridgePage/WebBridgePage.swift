@@ -37,7 +37,7 @@ class WebBridgePage: SYViewController {
             }
         }
         
-        if let path = Bundle.main.path(forResource: "bridgeIndex.html", ofType: nil) {
+        if let path = Bundle.main.path(forResource: "bridgeIndex", ofType: "html", inDirectory: "bridgeHTML") {
             let url = URL.init(fileURLWithPath: path)
             self.webView.load(URLRequest.init(url: url))
         }

@@ -23,10 +23,32 @@ class WebBridge {
     
     func evaluate(url: URL) -> Bool {
         if (url.absoluteString.contains("test")) {
-            let command = "Butils.fireEvent('\(0)')"
-            webView.evaluateJavaScript(command, completionHandler: nil)
+            if let handleId = url.handleId {
+                self.getParams(by: handleId) { (params) in
+                    self.callJSBlock(handleId: handleId, value: "{k: '恭喜你调用成功了'}")
+                }
+            }
             return true
         }
         return false
+    }
+    
+    func getParams(by handleId: String, completion: @escaping (Any?) -> Void) {
+        let command = "__Native_getParams(\(handleId))"
+        webView.evaluateJavaScript(command) { (result, error) in
+            completion(result)
+        }
+    }
+    
+    func callJSBlock(handleId: String, value: String) {
+        let command = "Bridge.postMessage({handler:\(handleId), data: \(value)})"
+        Log.print(command)
+        self.webView.evaluateJavaScript(command, completionHandler: nil)
+    }
+}
+
+fileprivate extension URL {
+    var handleId: String? {
+        return self.queryItems?.first(where: {$0.name == "handler"})?.value
     }
 }
