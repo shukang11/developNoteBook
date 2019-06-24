@@ -1,0 +1,6 @@
+
+module HC [system] {
+    umbrella header "hc.h"
+    export *
+    
+}
