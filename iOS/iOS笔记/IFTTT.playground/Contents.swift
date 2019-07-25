@@ -72,8 +72,11 @@ let action = Action()
 
 let channel = Channel(trigger: trigger, action: action, identifier: UUID())
 let recipt = Recipe.init()
+recipt.channels.append(channel)
 for i in stride(from: 0, to: 20, by: 2) {
-    if channel.judge(input: i) {
-        channel.act(args: i)
-    }
+    recipt.channels.forEach({
+        if $0.judge(input: i) {
+            $0.act(args: i)
+        }
+    })
 }

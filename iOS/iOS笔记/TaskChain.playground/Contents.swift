@@ -20,6 +20,7 @@ protocol TaskDelegate: class {
 protocol TaskManagerDelegate: class {
     func willStart(manager: TaskChain, task: TaskType, input: Value) -> Bool
     func done(manager:TaskChain, task: TaskType, output: Value) -> Value?
+    func onError(manager: TaskChain, task: TaskType, error: Error)
 }
 
 enum TaskOptionOnError {
@@ -30,7 +31,7 @@ enum TaskOptionOnError {
 class TaskChain {
     private(set) var tasks: [TaskType] = []
     
-    private var optionOnError: TaskOptionOnError = .ignore
+    private var optionOnError: TaskOptionOnError = .cancel
     
     weak var delegate: TaskManagerDelegate?
     
@@ -53,6 +54,7 @@ class TaskChain {
         } catch {
             switch optionOnError {
             case .cancel:
+                self.delegate?.onError(manager: self, task: task, error: error)
                 return
             case .ignore:
                 self.start(input: input)
@@ -77,6 +79,7 @@ extension TaskChain: TaskDelegate {
         }
         start(input: value)
     }
+    
 }
 
 class Task: TaskType {
